@@ -8,7 +8,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "4.5.2",
-    "firebase": "7.23",
     "fuse.js": "6.4.1",
     "install-eslint": "1.0.8",
     "normalize.css": "8.0.1",
