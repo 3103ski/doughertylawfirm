@@ -1,7 +1,7 @@
 //______________________
 // APP COMPONENTS
 //----------------------
-
+export { default as Navbar } from './navbar/Nav';
 //______________________
 // LAYOUT COMPONENTS
 //----------------------
