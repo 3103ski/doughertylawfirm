@@ -9,6 +9,7 @@ import 'bootstrap/dist/js/bootstrap.min';
 // Font Awesome v5.15
 import '@fortawesome/fontawesome-free/css/all.css';
 // Global Styles
+import 'roboto-fontface/css/roboto/roboto-fontface.css';
 import './global.css';
 // Provider Imports
 import { Provider } from 'react-redux';

@@ -1,4 +1,5 @@
 export const HOME = '/';
+export const ASSETS = '/assets/images/pageAssets';
 
 // Cases We Handle Pages
 export const CASES_WE_HANDLE = '/cases-we-handle';

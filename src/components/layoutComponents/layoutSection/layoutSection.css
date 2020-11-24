@@ -1,0 +1,9 @@
+.layoutRow {
+	padding: 70px 0;
+}
+
+@media only screen and (max-width: 900px) {
+	.layoutRow {
+		padding: 0 !important;
+	}
+}
