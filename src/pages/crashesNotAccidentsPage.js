@@ -1,7 +1,14 @@
+// React
 import React from 'react';
+// Components
+import { PageHeader } from '../components';
 
 function CrashesNotAccidentsPage(props) {
-	return <h1>Crashes Not Accidents</h1>;
+	return (
+		<>
+			<PageHeader>crashes not accidents</PageHeader>
+		</>
+	);
 }
 
 export default CrashesNotAccidentsPage;

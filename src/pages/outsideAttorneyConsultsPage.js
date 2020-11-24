@@ -1,7 +1,14 @@
+// React
 import React from 'react';
+// Components
+import { PageHeader } from '../components';
 
 function OutsideAttorneyConsultsPage(props) {
-	return <h1>Outside Attorneys</h1>;
+	return (
+		<>
+			<PageHeader>Outside Attorneys Consults</PageHeader>
+		</>
+	);
 }
 
 export default OutsideAttorneyConsultsPage;

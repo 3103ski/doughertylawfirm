@@ -1,7 +1,14 @@
+// React
 import React from 'react';
+// Components
+import { PageHeader } from '../components';
 
 function PremiseLiabilityPage(props) {
-	return <h1>Premise Liability</h1>;
+	return (
+		<>
+			<PageHeader>premise liability</PageHeader>
+		</>
+	);
 }
 
 export default PremiseLiabilityPage;

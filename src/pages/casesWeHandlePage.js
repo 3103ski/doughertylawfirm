@@ -1,7 +1,14 @@
 import React from 'react';
 
+// Components
+import { PageHeader } from '../components';
+
 function CasesWeHandle(props) {
-	return <h1>Cases We Handle</h1>;
+	return (
+		<>
+			<PageHeader>Cases We Handle</PageHeader>
+		</>
+	);
 }
 
 export default CasesWeHandle;

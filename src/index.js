@@ -3,6 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // Bootstrap v4.5.2
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min';
+import 'popper.js/dist/popper.min';
+import 'bootstrap/dist/js/bootstrap.min';
 // Font Awesome v5.15
 import '@fortawesome/fontawesome-free/css/all.css';
 // Global Styles

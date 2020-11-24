@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutSection, Navbar } from '../components';
+import { LayoutSection } from '../components';
 
 export default function (props) {
 	return (

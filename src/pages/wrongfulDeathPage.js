@@ -1,7 +1,14 @@
+// React
 import React from 'react';
+// Components
+import { PageHeader } from '../components';
 
 function WrongfulDeathPage(props) {
-	return <h1>Wrongful Death</h1>;
+	return (
+		<>
+			<PageHeader>wrongful death</PageHeader>
+		</>
+	);
 }
 
 export default WrongfulDeathPage;

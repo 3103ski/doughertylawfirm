@@ -1,7 +1,14 @@
+// React
 import React from 'react';
+// Components
+import { PageHeader } from '../components';
 
 function AboutUsPage(props) {
-	return <h1>About Us</h1>;
+	return (
+		<>
+			<PageHeader>About Us</PageHeader>
+		</>
+	);
 }
 
 export default AboutUsPage;

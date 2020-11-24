@@ -1,7 +1,14 @@
+// React
 import React from 'react';
+// Components
+import { PageHeader } from '../components';
 
 function TraumaticBrainInjuryPage(props) {
-	return <h1>Traumatic Brain Injury</h1>;
+	return (
+		<>
+			<PageHeader>traumatic brain injury</PageHeader>
+		</>
+	);
 }
 
 export default TraumaticBrainInjuryPage;

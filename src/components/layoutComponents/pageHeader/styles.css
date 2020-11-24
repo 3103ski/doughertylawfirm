@@ -1,0 +1,14 @@
+.title-container {
+	width: 100%;
+	background-image: url('/assets/images/siteWide/page-banner-bg.jpeg');
+	background-size: cover;
+	position: relative;
+	z-index: -1;
+}
+
+.title-container h1 {
+	color: white;
+	text-align: center;
+	padding: 20px;
+	text-transform: uppercase;
+}

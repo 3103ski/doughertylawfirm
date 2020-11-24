@@ -1,7 +1,15 @@
+// React
 import React from 'react';
+// Components
+import { PageHeader } from '../components';
+//
 
 function ContactUsPage(props) {
-	return <h1>About Us</h1>;
+	return (
+		<>
+			<PageHeader>Contact us</PageHeader>
+		</>
+	);
 }
 
 export default ContactUsPage;
