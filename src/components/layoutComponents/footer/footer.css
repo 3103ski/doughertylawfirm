@@ -9,12 +9,13 @@
 .footer-row {
 	display: flex;
 	justify-content: center;
+	height: 100%;
 }
 
 .call-now-col {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	font-size: 2rem;
 }
 

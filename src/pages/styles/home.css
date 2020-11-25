@@ -1,0 +1,50 @@
+/* Landing section */
+.landing-container {
+	background-image: url('/assets/images/pageAssets/outside-attorney-consults/miamiComplex.jpeg');
+	background-position: center;
+	background-size: cover;
+	height: 70vh;
+	min-height: 650px;
+	position: relative;
+}
+
+/* We try other cases banner */
+.banner-1 h1 {
+	text-align: center;
+	color: var(--primary-light);
+}
+
+/*  3traits */
+
+.trait-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.trait-col h2,
+.trait-col p,
+.trait-icon i {
+	color: var(--primary-dark);
+}
+
+.trait-icon {
+	font-size: 2.5rem;
+	width: 5.5rem;
+	height: 5.5rem;
+	border: solid 3px var(--primary-dark);
+	border-radius: 100%;
+	padding: 1.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.7rem;
+}
+
+/* BANNER 2 */
+
+.banner-2 h1,
+.banner-2 p {
+	color: var(--primary-light);
+}
