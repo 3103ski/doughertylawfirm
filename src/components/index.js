@@ -10,6 +10,7 @@ export { default as PageHeader } from './layoutComponents/pageHeader/PageHeader'
 export { default as HeaderImage } from './layoutComponents/headerImage/HeaderImage';
 export { default as ImageSlider } from './layoutComponents/slider/ImageSlider';
 export { default as AccordionDrop } from './accordion/AccordionDrop';
+export { default as Footer } from './layoutComponents/footer/Footer';
 //______________________
 // TEXT COMPONENTS
 //----------------------

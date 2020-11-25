@@ -2,7 +2,7 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 // Components
-import { Navbar } from './components';
+import { Navbar, Footer } from './components';
 // Pages
 import {
 	Home,
@@ -90,6 +90,7 @@ function App() {
 				<Switch>
 					<Route exact path={ROUTES.CONTACT_US} component={ContactUsPage} />
 				</Switch>
+				<Footer />
 			</Router>
 		</div>
 	);
