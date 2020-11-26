@@ -1,12 +1,13 @@
 import React from 'react';
 // import * as ROUTES from '../constants/routes';
-import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, Counter, HoverServices, ImgReel, Vimeo } from '../components';
+import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, CounterSection, HoverServices, ImgReel, Vimeo, RouteAnimation } from '../components';
 import { Col } from 'reactstrap';
 import './styles/home.css';
+import { Animated } from 'react-animated-css';
 
-export default function (props) {
+export default function HomePage(props) {
 	return (
-		<>
+		<RouteAnimation animation={props.animation}>
 			{/* ***************** */}
 			{/* 	Landing       */}
 			{/* ***************** */}
@@ -103,37 +104,7 @@ export default function (props) {
 			{/* ***************** */}
 			{/* 	Counters      */}
 			{/* ***************** */}
-			<LayoutSection
-				filterColor='rgba(55,63,69,0.6)'
-				fullWidth
-				containerStyle={{ backgroundImage: 'url(/assets/images/homePage/justice-bg-1.jpg)', position: 'relative' }}
-				rowStyle={{ maxWidth: 'var(--container-width)', display: 'flex', justifyContent: 'center', margin: 'auto' }}>
-				<Col md={4} xl={2}>
-					<Counter.Card title='scooter crash'>
-						<Counter isCurrency num='2.5' after='m' />
-					</Counter.Card>
-				</Col>
-				<Col md={4} xl={2}>
-					<Counter.Card title='car crash'>
-						<Counter isCurrency num='850' after='k' />
-					</Counter.Card>
-				</Col>
-				<Col md={4} xl={2}>
-					<Counter.Card title='car crash'>
-						<Counter isCurrency num='600' after='k' />
-					</Counter.Card>
-				</Col>
-				<Col md={4} xl={2}>
-					<Counter.Card title='car crash'>
-						<Counter isCurrency num='525' after='k' />
-					</Counter.Card>
-				</Col>
-				<Col md={4} xl={2}>
-					<Counter.Card title='slip & fall'>
-						<Counter isCurrency num='400' after='k' />
-					</Counter.Card>
-				</Col>
-			</LayoutSection>
+			<CounterSection />
 
 			{/* ***************** */}
 			{/* 	Banner 2      */}
@@ -160,6 +131,6 @@ export default function (props) {
 			<HoverServices />
 
 			<ImgReel />
-		</>
+		</RouteAnimation>
 	);
 }

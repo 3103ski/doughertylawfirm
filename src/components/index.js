@@ -13,13 +13,16 @@ export { default as ImageSlider } from './layoutComponents/slider/ImageSlider';
 export { default as AccordionDrop } from './accordion/AccordionDrop';
 export { default as Button } from './layoutComponents/button/Button';
 export { default as ImgReel } from './layoutComponents/infiniteCarousel/InfiniteCarousel';
+export { default as RouteAnimation } from './layoutComponents/routeAnimation/RouteAnimation';
 //_________________________
 // Interactive Components
 //-------------------------
 export { default as Vimeo } from './vimeoEmbed/VimeoEmbed';
 export { default as Counter } from './counter/Counter';
+export { default as CounterSection } from './counterSection/CounterSection';
 export { default as HoverBox } from './layoutComponents/hoverBoxes/HoverBox';
 export { default as HoverServices } from './hoverServices/HoverServices';
+export { default as ContactCard } from './contactCard/ContactCard';
 //______________________
 // TEXT COMPONENTS
 //----------------------

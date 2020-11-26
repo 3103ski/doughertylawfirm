@@ -1,0 +1,42 @@
+.contact-col {
+	background-size: cover;
+	background-position: center;
+	padding: 75px 30px;
+	min-height: 600px;
+	display: flex;
+	position: relative;
+}
+
+.contact-info-container h2,
+.contact-info-container p {
+	color: var(--primary-dark);
+	font-weight: bold;
+	z-index: 1;
+}
+
+.contact-card-info {
+	min-height: 280px;
+	padding: 15px 0;
+}
+
+.contact-info-container h2 {
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.contact-info-container p {
+	line-height: 1.5rem;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.contact-card-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-color: rgb(217 217 217 / 65%);
+}
