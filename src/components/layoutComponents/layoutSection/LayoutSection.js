@@ -8,8 +8,8 @@ export default function LayoutSection({ children, rowStyle, containerStyle, full
 	const filter = filterColor ? <div className='bg-filter' style={{ backgroundColor: filterColor }} /> : null;
 	return (
 		<Container fluid={fullWidth ? true : false} className={`${addedContainerClasses}`} style={{ ...containerStyle }}>
-			{filter}
 			<Row className={`layoutRow ${addedRowClasses}`} style={{ ...rowStyle }} {...restProps}>
+				{filter}
 				{children}
 			</Row>
 		</Container>

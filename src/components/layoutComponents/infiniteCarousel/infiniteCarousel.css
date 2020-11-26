@@ -1,0 +1,47 @@
+@keyframes rollPictures {
+	from {
+		margin-left: 0px;
+	}
+	to {
+		margin-left: -1925px;
+	}
+}
+
+.infinite-carousel-container {
+	background-color: white;
+	position: relative;
+	height: 225px;
+	width: auto;
+	overflow: hidden;
+}
+
+.first {
+	margin-left: 0px;
+	animation: rollPictures 18s linear infinite;
+}
+
+.infinite-carousel-inner {
+	display: flex;
+	overflow: visible;
+	align-items: center;
+	padding: 30px 5px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 225px;
+	width: 3850px;
+}
+
+.box {
+	width: 175px;
+	height: 225px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 0 5px;
+}
+
+.infinite-carousel-inner .box img {
+	width: 100%;
+}

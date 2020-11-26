@@ -1,7 +1,7 @@
 // React
 import React from 'react';
 // Components
-import { PageHeader, LayoutSection, ImageSlider, HeaderText, Paragraph, SubHeaderText, BulletItem, BulletList, HoverServices } from '../components';
+import { PageHeader, LayoutSection, ImageSlider, HeaderText, Paragraph, SubHeaderText, BulletItem, BulletList, HoverServices, ImgReel } from '../components';
 import { Col } from 'reactstrap';
 
 function PremiseLiabilityPage(props) {
@@ -69,6 +69,7 @@ function PremiseLiabilityPage(props) {
 			{/* *********************************** */}
 			{/* *********************************** */}
 			<HoverServices />
+			<ImgReel />
 		</>
 	);
 }

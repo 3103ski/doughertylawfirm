@@ -3,7 +3,7 @@
 /* -------------- */
 .main-nav-container {
 	background-color: var(--primary-light);
-	padding: 15px;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	transition: 0.2s;
@@ -19,11 +19,28 @@
 	width: 1300px;
 }
 
+@keyframes enterNav {
+	from {
+		margin-top: -100px;
+	}
+	to {
+		margin-top: 0px;
+	}
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	animation: enterNav;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+}
+
 /* ___________ */
 /* NAV CONTENT */
 /* ----------- */
 .nav-logo {
-	width: 150px;
+	width: 200px;
 }
 
 .nav-logo:hover {

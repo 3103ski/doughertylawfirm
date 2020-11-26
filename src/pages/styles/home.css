@@ -3,9 +3,33 @@
 	background-image: url('/assets/images/pageAssets/outside-attorney-consults/miamiComplex.jpeg');
 	background-position: center;
 	background-size: cover;
-	height: 70vh;
-	min-height: 650px;
+	min-height: 600px;
 	position: relative;
+	padding: 50px 0;
+}
+
+.landing-bullet-list {
+	padding: 20px 0;
+}
+.landing-bullet {
+	display: flex;
+	align-items: flex-start;
+}
+
+.landing-bullet span {
+	font-size: 2rem;
+	margin-top: 0rem;
+}
+
+.landing-bullet p {
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	font-weight: bold;
+}
+
+.landing-bullet p,
+.landing-bullet span {
+	color: var(--primary-dark);
 }
 
 /* We try other cases banner */

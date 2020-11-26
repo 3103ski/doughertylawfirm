@@ -8,9 +8,10 @@ function MotorVehicleCrashesPage(props) {
 	return (
 		<>
 			<PageHeader>motor vehicle crashes</PageHeader>
+
 			<LayoutSection>
-				<HeaderImage image='/assets/images/pageAssets/motor-vehicle-crashes/hdr.jpg' alt='motor vehicle crash header' />
 				<Col>
+					<HeaderImage image='/assets/images/pageAssets/motor-vehicle-crashes/hdr.jpg' alt='motor vehicle crash header' />
 					<HeaderText>motor vehicle crash attorneys</HeaderText>
 					<Paragraph>
 						Being involved in a car crash can be an extremely upsetting, emotional and painful time. In most non-catastrophic car crashes people don’t even feel the real affects, i.e. pain

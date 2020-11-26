@@ -25,6 +25,22 @@ class MainNav extends Component {
 		});
 	}
 
+	componentDidMount() {
+		window.onscroll = function () {
+			fixNavOnScroll();
+		};
+		var mainNav = document.querySelector('#main-nav');
+		var sticky = mainNav.offsetTop;
+
+		function fixNavOnScroll() {
+			if (window.pageYOffset >= 100) {
+				mainNav.classList.add('sticky');
+			} else {
+				mainNav.classList.remove('sticky');
+			}
+		}
+	}
+
 	render() {
 		let linkFunctions;
 		const checkWidth = () => {
@@ -43,11 +59,12 @@ class MainNav extends Component {
 		};
 		checkWidth();
 		window.addEventListener('resize', checkWidth);
+
 		return (
 			<>
 				<span onClick={() => this.toggleNav()} className='fas fa-bars nav-toggle'></span>
 				<div className={`${this.state.showDrawerNav ? 'showNavExit' : null}`} onClick={() => this.toggleNav()} />
-				<div className={`main-nav-container ${this.state.showDrawerNav ? 'showNav' : null}`}>
+				<div id='main-nav' className={` main-nav-container ${this.state.showDrawerNav ? 'showNav' : null}`}>
 					<span onClick={() => this.toggleNav()} className='fas fa-times nav-close'></span>
 					<div className='nav-inner-container'>
 						<NavLink to={ROUTES.HOME}>

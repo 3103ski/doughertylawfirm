@@ -1,8 +1,10 @@
-.light-btn {
+.light-btn,
+.dark-btn:hover {
 	background-color: var(--primary-light);
 	color: var(--primary-dark);
 }
-.dark-btn {
+.dark-btn,
+.light-btn:hover {
 	background-color: var(--primary-dark);
 	color: var(--primary-light);
 }

@@ -12,6 +12,7 @@ export { default as HeaderImage } from './layoutComponents/headerImage/HeaderIma
 export { default as ImageSlider } from './layoutComponents/slider/ImageSlider';
 export { default as AccordionDrop } from './accordion/AccordionDrop';
 export { default as Button } from './layoutComponents/button/Button';
+export { default as ImgReel } from './layoutComponents/infiniteCarousel/InfiniteCarousel';
 //_________________________
 // Interactive Components
 //-------------------------

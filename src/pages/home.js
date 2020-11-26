@@ -1,6 +1,6 @@
 import React from 'react';
 // import * as ROUTES from '../constants/routes';
-import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, Counter, HoverServices } from '../components';
+import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, Counter, HoverServices, ImgReel, Vimeo } from '../components';
 import { Col } from 'reactstrap';
 import './styles/home.css';
 
@@ -11,12 +11,28 @@ export default function (props) {
 			{/* 	Landing       */}
 			{/* ***************** */}
 			<LayoutSection fullWidth rowStyle={{ maxWidth: 'var(--container-width)', margin: 'auto' }} containerClass='landing-container' filterColor='#ffffff9e'>
-				{/* <div className='bg-filter' /> */}
-				<Col md={4} className='ml-auto'>
+				<div className='bg-filter' />
+				<Col md={4} className='ml-auto d-flex flex-column align-items-center'>
 					<img src='/assets/images/logo.png' style={{ width: '100%' }} />
-					<Button>cases we handle</Button>
+					<div className='landing-bullet-list'>
+						<div className='landing-bullet'>
+							<span className='fas fa-check' />
+							<p>Trucking, Brain Trauma, Wrongful Death, Motor Vehicle Crash? We can help.</p>
+						</div>
+						<div className='landing-bullet'>
+							<span className='fas fa-check' />
+							<p>FREE Consultations</p>
+						</div>
+						<div className='landing-bullet'>
+							<span className='fas fa-check' />
+							<p>CALL NOW (800)231-0323</p>
+						</div>
+					</div>
+					<Button btnStyle={{ border: 'solid 3px var(--primary-dark)', textTransform: 'uppercase' }}>cases we handle</Button>
 				</Col>
-				<Col md={6}>{/* <Vimeo vimeoLink='https://vimeo.com/438353350' /> */}</Col>
+				<Col md={6}>
+					<Vimeo vimeoLink='https://vimeo.com/438353350' />
+				</Col>
 			</LayoutSection>
 
 			{/* ***************** */}
@@ -142,6 +158,8 @@ export default function (props) {
 			{/*  Hover Services   */}
 			{/* ***************** */}
 			<HoverServices />
+
+			<ImgReel />
 		</>
 	);
 }

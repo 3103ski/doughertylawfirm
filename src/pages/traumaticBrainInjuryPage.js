@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 // Components
-import { PageHeader, HeaderImage, LayoutSection, HeaderText, Paragraph, SubHeaderText, BulletItem, BulletList, HoverServices } from '../components';
+import { PageHeader, HeaderImage, LayoutSection, HeaderText, Paragraph, SubHeaderText, BulletItem, BulletList, HoverServices, ImgReel } from '../components';
 import { Col } from 'reactstrap';
 // static
 import * as ROUTES from '../constants/routes';
@@ -105,6 +105,7 @@ function TraumaticBrainInjuryPage(props) {
 			{/* *********************************** */}
 			{/* *********************************** */}
 			<HoverServices />
+			<ImgReel />
 		</>
 	);
 }
