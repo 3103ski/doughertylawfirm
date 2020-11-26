@@ -2,7 +2,7 @@ import React from 'react';
 import * as ROUTES from '../constants/routes';
 import { Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage, BulletItem, BulletList } from '../components';
+import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage, BulletItem, BulletList, HoverServices } from '../components';
 
 function SportsRelatedInjuryPage(props) {
 	return (
@@ -72,6 +72,9 @@ function SportsRelatedInjuryPage(props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

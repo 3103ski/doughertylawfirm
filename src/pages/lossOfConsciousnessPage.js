@@ -1,7 +1,7 @@
 import React from 'react';
 import * as ROUTES from '../constants/routes';
 import { Col } from 'reactstrap';
-import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage } from '../components';
+import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage, HoverServices } from '../components';
 
 function LossOfConsciousnessPage(props) {
 	return (
@@ -70,6 +70,9 @@ function LossOfConsciousnessPage(props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

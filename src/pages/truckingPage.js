@@ -1,7 +1,7 @@
 import React from 'react';
 
 // components
-import { PageHeader, LayoutSection, HeaderImage, AccordionDrop, BulletList, BulletItem, Paragraph, HeaderText } from '../components';
+import { PageHeader, LayoutSection, HeaderImage, AccordionDrop, BulletList, BulletItem, Paragraph, HeaderText, HoverServices } from '../components';
 import { Col } from 'reactstrap';
 
 function TruckingPage(props) {
@@ -285,6 +285,10 @@ function TruckingPage(props) {
 					</AccordionDrop.Container>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* 	Hover Services			        */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

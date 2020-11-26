@@ -1,7 +1,7 @@
 import React from 'react';
 import * as ROUTES from '../constants/routes';
 import { Col } from 'reactstrap';
-import { LayoutSection, HeaderImage, PageHeader, Paragraph, HeaderText } from '../components';
+import { LayoutSection, HeaderImage, PageHeader, Paragraph, HeaderText, HoverServices } from '../components';
 
 function ConcussionsPage(props) {
 	return (
@@ -63,6 +63,9 @@ function ConcussionsPage(props) {
 					meet with you to discuss your case and explore your options for recovering that you may be entitled to recover in a settlement or jury verdict.
 				</Paragraph>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

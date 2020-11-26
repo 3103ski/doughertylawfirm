@@ -1,7 +1,7 @@
 // React
 import React from 'react';
 // Components
-import { PageHeader, LayoutSection, HeaderImage, HeaderText, Paragraph } from '../components';
+import { PageHeader, LayoutSection, HeaderImage, HeaderText, Paragraph, HoverServices } from '../components';
 import { Col } from 'reactstrap';
 
 function MotorVehicleCrashesPage(props) {
@@ -37,6 +37,9 @@ function MotorVehicleCrashesPage(props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

@@ -1,7 +1,7 @@
 // React
 import React from 'react';
 // Components
-import { PageHeader, LayoutSection, HeaderImage, HeaderText, Paragraph, SubHeaderText, BulletItem, BulletList } from '../components';
+import { PageHeader, LayoutSection, HeaderImage, HeaderText, Paragraph, SubHeaderText, BulletItem, BulletList, HoverServices } from '../components';
 import { Col } from 'reactstrap';
 //
 
@@ -10,9 +10,12 @@ function WrongfulDeathPage(props) {
 		<>
 			<PageHeader>wrongful death</PageHeader>
 			<LayoutSection>
+				{/* ************************************ */}
+				{/* ************************************ */}
 				<HeaderImage image='/assets/images/pageAssets/wrongful-death/hdr.jpg' alt='wrongful death header img' />
 				<Col>
-					{/* Section One */}
+					{/* ************************************ */}
+					{/* ************************************ */}
 					<HeaderText>wrongful death attorneys</HeaderText>
 					<Paragraph>
 						If you have suffered the tragedy of losing a loved one in an accident or as a result of a medical mistake, we offer our deepest condolences. No one should be forced to endure
@@ -32,7 +35,8 @@ function WrongfulDeathPage(props) {
 						best to help you through this difficult time. While it is important that you remain up-to-date and make informed decisions throughout your case, we also understand that you
 						need time to grieve, and we will make sure that your case plays as minimal of a role in your life as possible.
 					</Paragraph>
-					{/* Section Two */}
+					{/* ************************************ */}
+					{/* ************************************ */}
 					<HeaderText>are you entitled to receive wrongful death damages?</HeaderText>
 					<Paragraph>
 						Each state sets its own set of rules with respect to who can claim and receive damages from a wrongful death. For this reason, it is critical you speak with an experienced
@@ -51,6 +55,8 @@ function WrongfulDeathPage(props) {
 						So a wrongful death claim focuses on the suffering of the family of the deceased and the survival action focuses on the suffering of the deceased person rather than the grief
 						and financial losses of the family.
 					</Paragraph>
+					{/* ************************************ */}
+					{/* ************************************ */}
 					<SubHeaderText>We look at:</SubHeaderText>
 					<BulletList>
 						<BulletItem>Damages your deceased loved one was entitled to for his or her personal injury claim</BulletItem>
@@ -63,6 +69,8 @@ function WrongfulDeathPage(props) {
 						<BulletItem>Your pain and suffering over your loss</BulletItem>
 						<BulletItem>Your lost wages as you cared for your loved one and grieved</BulletItem>
 					</BulletList>
+					{/* ************************************ */}
+					{/* ************************************ */}
 					<HeaderText>wrongful death recovery when children lose a parent</HeaderText>
 					<Paragraph>
 						We are truly saddened when an untimely death leaves a young child without a mother or a father. Although money can never replace the loss of a parent, these children deserve
@@ -85,6 +93,8 @@ function WrongfulDeathPage(props) {
 						<BulletItem>Grief and mental anguish the parents experience</BulletItem>
 						<BulletItem>The cost of mental health services to help the whole family cope with this extreme type of loss</BulletItem>
 					</BulletList>
+					{/* ************************************ */}
+					{/* ************************************ */}
 					<HeaderText>causes of death and your wrongful death lawsuit</HeaderText>
 					<Paragraph>
 						Wrongful death lawsuits can be filed in a variety of situations that caused the death of a loved one, including motor vehicle and other types of accidents, medical malpractice,
@@ -103,6 +113,9 @@ function WrongfulDeathPage(props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

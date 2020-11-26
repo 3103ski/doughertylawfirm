@@ -1,5 +1,6 @@
 import React from 'react';
-import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, Counter } from '../components';
+// import * as ROUTES from '../constants/routes';
+import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, Counter, HoverServices } from '../components';
 import { Col } from 'reactstrap';
 import './styles/home.css';
 
@@ -47,6 +48,7 @@ export default function (props) {
 					<img src='/assets/images/homePage/office.jpeg' alt='office' style={{ width: '80%', borderRadius: '10px' }} />
 				</Col>
 			</LayoutSection>
+
 			{/* ***************** */}
 			{/* 	3 Traits      */}
 			{/* ***************** */}
@@ -81,6 +83,7 @@ export default function (props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+
 			{/* ***************** */}
 			{/* 	Counters      */}
 			{/* ***************** */}
@@ -115,6 +118,7 @@ export default function (props) {
 					</Counter.Card>
 				</Col>
 			</LayoutSection>
+
 			{/* ***************** */}
 			{/* 	Banner 2      */}
 			{/* ***************** */}
@@ -133,6 +137,11 @@ export default function (props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+
+			{/* ***************** */}
+			{/*  Hover Services   */}
+			{/* ***************** */}
+			<HoverServices />
 		</>
 	);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as ROUTES from '../constants/routes';
 import { Col } from 'reactstrap';
-import { HeaderImage, LayoutSection, PageHeader, HeaderText, Paragraph, BulletItem, BulletList, SubHeaderText } from '../components';
+import { HeaderImage, LayoutSection, PageHeader, HeaderText, Paragraph, BulletItem, BulletList, SubHeaderText, HoverServices } from '../components';
 
 function AmnesiaPage(props) {
 	return (
@@ -74,6 +74,9 @@ function AmnesiaPage(props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

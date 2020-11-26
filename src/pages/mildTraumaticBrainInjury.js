@@ -1,7 +1,7 @@
 import React from 'react';
 import * as ROUTES from '../constants/routes';
 import { Col } from 'reactstrap';
-import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage, BulletItem, BulletList } from '../components';
+import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage, BulletItem, BulletList, HoverServices } from '../components';
 
 function MildTraumaticBrainInjuryPage(props) {
 	return (
@@ -74,6 +74,9 @@ function MildTraumaticBrainInjuryPage(props) {
 					/>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }

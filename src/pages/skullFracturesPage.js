@@ -2,7 +2,7 @@ import React from 'react';
 import * as ROUTES from '../constants/routes';
 import { Col } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage, BulletItem, BulletList } from '../components';
+import { LayoutSection, PageHeader, HeaderText, Paragraph, SubHeaderText, HeaderImage, BulletItem, BulletList, HoverServices } from '../components';
 
 function SkullFracturesPage(props) {
 	return (
@@ -66,6 +66,9 @@ function SkullFracturesPage(props) {
 					</Paragraph>
 				</Col>
 			</LayoutSection>
+			{/* *********************************** */}
+			{/* *********************************** */}
+			<HoverServices />
 		</>
 	);
 }
