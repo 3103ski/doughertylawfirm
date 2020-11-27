@@ -9,7 +9,7 @@ function WrongfulDeathPage(props) {
 	return (
 		<>
 			<PageHeader>wrongful death</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					{/* ************************************ */}
 					{/* ************************************ */}

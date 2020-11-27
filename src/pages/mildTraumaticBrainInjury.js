@@ -7,7 +7,7 @@ function MildTraumaticBrainInjuryPage(props) {
 	return (
 		<>
 			<PageHeader>mild traumatic brain injuries</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image={`${ROUTES.ASSETS}/mild-traumatic-brain-injuries/hdr.jpeg`} src='mtb injuries header image' />
 					<Col>

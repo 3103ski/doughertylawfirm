@@ -7,7 +7,7 @@ function ConcussionsPage(props) {
 	return (
 		<>
 			<PageHeader>concussions</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image={`${ROUTES.ASSETS}/concussions/hdr.png`} alt='concussions header image' />
 

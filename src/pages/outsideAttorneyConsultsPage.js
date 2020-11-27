@@ -9,7 +9,7 @@ function OutsideAttorneyConsultsPage(props) {
 	return (
 		<>
 			<PageHeader>Outside AttorneyConsultsPage</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderText>how we can help</HeaderText>
 					<Col className='col-12 col-md-9'>

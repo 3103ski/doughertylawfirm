@@ -10,7 +10,7 @@ function CasesWeHandle(props) {
 	return (
 		<>
 			<PageHeader>Cases We Handle</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<Col className='col-10 mx-auto'>
 						<ImageSlider slides={slides} />

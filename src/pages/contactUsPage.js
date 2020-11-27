@@ -9,7 +9,7 @@ function ContactUsPage(props) {
 	return (
 		<>
 			<PageHeader>Contact us</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection fullWidth className=''>
 					<ContactCard florida />
 					<ContactCard />

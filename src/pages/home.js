@@ -3,11 +3,10 @@ import React from 'react';
 import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, CounterSection, HoverServices, ImgReel, Vimeo, RouteAnimation } from '../components';
 import { Col } from 'reactstrap';
 import './styles/home.css';
-import { Animated } from 'react-animated-css';
 
 export default function HomePage(props) {
 	return (
-		<RouteAnimation animation={props.animation}>
+		<RouteAnimation animationIn='fadeIn'>
 			{/* ***************** */}
 			{/* 	Landing       */}
 			{/* ***************** */}
@@ -31,8 +30,8 @@ export default function HomePage(props) {
 					</div>
 					<Button btnStyle={{ border: 'solid 3px var(--primary-dark)', textTransform: 'uppercase' }}>cases we handle</Button>
 				</Col>
-				<Col md={6}>
-					<Vimeo vimeoLink='https://vimeo.com/438353350' />
+				<Col md={6} className='mr-auto'>
+					<Vimeo vimeoLink='https://player.vimeo.com/video/438353350?autoplay=1&loop=1&muted=1' />
 				</Col>
 			</LayoutSection>
 
@@ -69,8 +68,8 @@ export default function HomePage(props) {
 			{/* ***************** */}
 			{/* 	3 Traits      */}
 			{/* ***************** */}
-			<LayoutSection fullWidth containerStyle={{ backgroundColor: 'var(--primary-light)' }} rowStyle={{ maxWidth: 'var(--container-width)', margin: 'auto' }}>
-				<Col className='trait-col' md={4}>
+			<LayoutSection fullWidth containerStyle={{ backgroundColor: 'var(--primary-light)', padding: '50px 0px' }} rowStyle={{ maxWidth: 'var(--container-width)', margin: 'auto' }}>
+				<Col className='trait-col' lg={4}>
 					<div className='trait-icon'>
 						<i class='fas fa-user-alt'></i>
 					</div>
@@ -79,7 +78,7 @@ export default function HomePage(props) {
 						The DOUGHERTY LAW FIRM, P.A. does not represent any insurance companies and we are solely dedicated to fighting and representing the rights of the injured and/or deceased!
 					</Paragraph>
 				</Col>
-				<Col className='trait-col' md={4}>
+				<Col className='trait-col' lg={4}>
 					<div className='trait-icon'>
 						<i class='fas fa-gavel'></i>
 					</div>
@@ -89,7 +88,7 @@ export default function HomePage(props) {
 						relationship.
 					</Paragraph>
 				</Col>
-				<Col className='trait-col' md={4}>
+				<Col className='trait-col' lg={4}>
 					<div className='trait-icon'>
 						<i class='fas fa-handshake'></i>
 					</div>

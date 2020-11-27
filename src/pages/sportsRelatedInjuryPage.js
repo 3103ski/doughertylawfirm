@@ -8,7 +8,7 @@ function SportsRelatedInjuryPage(props) {
 	return (
 		<>
 			<PageHeader>sports related brain injuries</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image={`${ROUTES.ASSETS}/sports-related-injuries/hdr.png`} />
 					<Col>

@@ -8,7 +8,7 @@ function MotorVehicleCrashesPage(props) {
 	return (
 		<>
 			<PageHeader>motor vehicle crashes</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<Col>
 						<HeaderImage image='/assets/images/pageAssets/motor-vehicle-crashes/hdr.jpg' alt='motor vehicle crash header' />

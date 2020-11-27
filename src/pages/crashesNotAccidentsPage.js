@@ -9,7 +9,7 @@ function CrashesNotAccidentsPage(props) {
 	return (
 		<>
 			<PageHeader>crashes not accidents</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderText>why words matter</HeaderText>
 					<Col className='col-12 col-md-9'>

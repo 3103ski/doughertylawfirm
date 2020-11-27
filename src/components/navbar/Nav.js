@@ -30,7 +30,6 @@ class MainNav extends Component {
 			fixNavOnScroll();
 		};
 		var mainNav = document.querySelector('#main-nav');
-		var sticky = mainNav.offsetTop;
 
 		function fixNavOnScroll() {
 			if (window.pageYOffset >= 100) {

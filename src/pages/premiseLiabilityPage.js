@@ -19,7 +19,7 @@ function PremiseLiabilityPage(props) {
 	return (
 		<>
 			<PageHeader>premise liability</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<Col>
 						<ImageSlider slides={slides}></ImageSlider>

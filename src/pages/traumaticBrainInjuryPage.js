@@ -11,7 +11,7 @@ function TraumaticBrainInjuryPage(props) {
 	return (
 		<>
 			<PageHeader>traumatic brain injury</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image='/assets/images/pageAssets/traumatic-brain-injury/hdr.jpeg' alt='traumatic brain injury' />
 

@@ -10,7 +10,7 @@ function TruckingPage(props) {
 	return (
 		<>
 			<PageHeader>truck crashes</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image='/assets/images/pageAssets/truck-crashes/hdr.png' alt='truck crashes header' />
 

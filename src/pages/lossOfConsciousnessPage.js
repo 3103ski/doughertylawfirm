@@ -7,7 +7,7 @@ function LossOfConsciousnessPage(props) {
 	return (
 		<>
 			<PageHeader>loss of consciousness</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image={`${ROUTES.ASSETS}/loss-of-consciousness/hdr.png`} />
 					<Col>

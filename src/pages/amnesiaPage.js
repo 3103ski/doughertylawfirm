@@ -7,7 +7,7 @@ function AmnesiaPage(props) {
 	return (
 		<>
 			<PageHeader>amnesia</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image={`${ROUTES.ASSETS}/amnesia/hdr.jpg`} alt='amnesia header image' styles={{ maxHeight: '200px' }} />
 					<Col>

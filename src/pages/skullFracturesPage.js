@@ -8,7 +8,7 @@ function SkullFracturesPage(props) {
 	return (
 		<>
 			<PageHeader>skull fractures</PageHeader>
-			<RouteAnimation animation={props.animation ? props.animation : ''}>
+			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image={`${ROUTES.ASSETS}/skull-fractures/hdr.jpeg`} alt='skull fractures header image' />
 					<Col>
