@@ -1,3 +1,7 @@
+/* _____________________________ */
+/* 		Home Page				 */
+/* ----------------------------- */
+
 /* Landing section */
 .landing-container {
 	background-image: url('/assets/images/pageAssets/outside-attorney-consults/img-1.jpeg');
@@ -10,6 +14,37 @@
 
 .landing-bullet-list {
 	padding: 20px 0;
+}
+
+.landing-logo {
+	width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+	.landing-logo {
+		margin-bottom: 60px;
+	}
+	.landing-bullet-list {
+		width: 80%;
+	}
+	.vimeo-col {
+		height: 350px;
+		margin-bottom: 40px;
+	}
+	.landing-row {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.landing-logo {
+		margin-bottom: 0px;
+	}
+	.landing-bullet-list {
+		width: 90%;
+	}
+	.vimeo-col {
+		height: 300px;
+	}
 }
 .landing-bullet {
 	display: flex;
@@ -25,6 +60,7 @@
 	font-size: 1.5rem;
 	line-height: 2.25rem;
 	font-weight: bold;
+	text-align: left;
 }
 
 .landing-bullet p,

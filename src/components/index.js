@@ -22,6 +22,7 @@ export { default as Counter } from './counter/Counter';
 export { default as CounterSection } from './counterSection/CounterSection';
 export { default as HoverBox } from './layoutComponents/hoverBoxes/HoverBox';
 export { default as HoverServices } from './hoverServices/HoverServices';
+export { default as FormSection } from './formSection/FormSection';
 export { default as ContactCard } from './contactCard/ContactCard';
 //______________________
 // TEXT COMPONENTS

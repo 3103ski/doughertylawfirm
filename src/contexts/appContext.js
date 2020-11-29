@@ -5,7 +5,7 @@ const AppContext = createContext();
 const AppContentProvider = (props) => {
 	const [state, setState] = useState({
 		isLoading: true,
-		viewEnterAnimation: 'fadeInRight',
+		viewEnterAnimation: 'fadeIn',
 		viewLeaveAnimation: 'fadeOutLeft',
 	});
 

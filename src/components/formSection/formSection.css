@@ -1,0 +1,31 @@
+.form-section-container {
+	background-image: url('/assets/images/homePage/contact-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 70px 0;
+	position: relative;
+}
+
+.form-text {
+	font-size: 0.9rem;
+	margin: 0;
+	letter-spacing: 0.05rem;
+}
+
+.form-title {
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+.form-title,
+.form-text {
+	color: white;
+	text-align: center;
+}
+
+.form-divider {
+	width: 20%;
+	height: 5px;
+	background-color: white;
+	margin: 30px auto 70px auto;
+}

@@ -13,19 +13,37 @@
 	height: 100%;
 }
 
+.footer-logo img {
+	width: 80%;
+}
+
 .call-now-col {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	font-size: 2rem;
+	font-size: 1.9rem;
 }
 
 .call-now-col span {
 	margin-right: 15px;
-	font-size: 3rem;
+	font-size: 2.8rem;
 }
 
 .call-now-col span,
 a {
 	color: var(--primary-dark);
+}
+
+@media only screen and (max-width: 767px) {
+	.footer-logo img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 901px) {
+	.call-now-col span {
+		font-size: 2rem;
+	}
+	.call-now-col a {
+		font-size: 1.7rem;
+	}
 }

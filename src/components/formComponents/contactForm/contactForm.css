@@ -1,0 +1,35 @@
+.form-submit {
+	background-color: var(--primary-light);
+	color: var(--shade-dark);
+	border: none;
+}
+
+.form-submit:hover {
+	cursor: pointer;
+	background-color: var(--primary-dark);
+	color: var(--primary-light);
+}
+
+.form-control {
+	padding: 25px 30px;
+}
+
+@media screen and (max-width: 991px) {
+	.form-control {
+		margin-bottom: 20px;
+	}
+}
+
+.form-control:focus {
+	border-color: var(--primary-dark);
+}
+
+.form-control,
+.form-control:focus {
+	background-color: transparent;
+}
+
+.form-control,
+.form-control::placeholder {
+	color: var(--primary-light);
+}
