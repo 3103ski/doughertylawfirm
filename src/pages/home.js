@@ -3,6 +3,8 @@ import React from 'react';
 import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, CounterSection, HoverServices, ImgReel, Vimeo, RouteAnimation, FormSection } from '../components';
 import { Col } from 'reactstrap';
 import './styles/styles.css';
+import * as ROUTES from '../constants/routes';
+import { NavLink } from 'react-router-dom';
 
 export default function HomePage(props) {
 	return (
@@ -31,7 +33,9 @@ export default function HomePage(props) {
 							<p>CALL NOW (800)231-0323</p>
 						</div>
 					</div>
-					<Button btnStyle={{ border: 'solid 3px var(--primary-dark)', textTransform: 'uppercase' }}>cases we handle</Button>
+					<NavLink to={ROUTES.CASES_WE_HANDLE}>
+						<Button btnStyle={{ border: 'solid 3px var(--primary-dark)', textTransform: 'uppercase' }}>cases we handle</Button>
+					</NavLink>
 				</Col>
 				<Col className='col-12 mx-auto col-lg-6 vimeo-col'>
 					<Vimeo vimeoLink='https://player.vimeo.com/video/438353350?autoplay=1&loop=1&muted=1' />
@@ -44,7 +48,9 @@ export default function HomePage(props) {
 			<LayoutSection fullWidth containerStyle={{ backgroundColor: 'var(--primary-dark)' }}>
 				<Col md={10} className='banner-1 mx-auto my-5 d-flex flex-column align-items-center'>
 					<h1 style={{ margin: '20px 0 30px 0' }}>We are the attorneys that try other attorneys' cases</h1>
-					<Button>LEARN MORE!</Button>
+					<NavLink to={ROUTES.ABOUT_US}>
+						<Button>LEARN MORE!</Button>
+					</NavLink>
 				</Col>
 			</LayoutSection>
 
