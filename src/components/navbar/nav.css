@@ -122,11 +122,17 @@
 
 .nav-toggle {
 	display: none;
-	position: absolute;
+	position: fixed;
+	z-index: 100;
 	left: 20px;
 	top: 15px;
 	font-size: 1.4rem;
-	color: white;
+	color: var(--primary-light);
+	background-color: var(--primary-dark);
+	padding: 10px 8px 10px 10px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
 }
 
 .nav-close {
@@ -147,9 +153,10 @@
 @media only screen and (max-width: 900px) {
 	/* Containers */
 	.main-nav-container {
-		position: absolute;
+		position: fixed;
 		height: 100vh;
 		width: 250px;
+		display: flex;
 		flex-direction: column;
 		top: 0;
 		left: -250px;
@@ -199,7 +206,6 @@
 	.nav-toggle,
 	.nav-close {
 		display: inline-block;
-		z-index: 100;
 	}
 	.activePage {
 		border-top: none;
