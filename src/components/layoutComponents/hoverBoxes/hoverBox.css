@@ -1,6 +1,6 @@
 .hover-box-container {
 	height: 250px;
-	margin-bottom: 25px;
+	margin: 10px 0;
 	background-size: cover;
 }
 
@@ -41,4 +41,15 @@
 
 .hover-box-inner:hover i {
 	margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+	.hover-box-container p {
+		font-size: 0.9rem;
+		line-height: 1.3rem;
+	}
+
+	.hover-box-container {
+		margin: 25px 0;
+	}
 }

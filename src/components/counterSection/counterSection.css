@@ -1,7 +1,9 @@
-.counter-col {
-	margin-bottom: 20px;
-}
-
 .counter-col:last-child {
 	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 991px) {
+	.counter-col {
+		margin-bottom: 20px;
+	}
 }

@@ -9,7 +9,7 @@ export default function CounterSection(props) {
 			filterColor='rgba(55,63,69,0.6)'
 			fullWidth
 			containerStyle={{ backgroundImage: 'url(/assets/images/homePage/justice-bg-1.jpg)', position: 'relative' }}
-			rowStyle={{ maxWidth: 'var(--container-width)', display: 'flex', justifyContent: 'center', margin: 'auto' }}>
+			rowStyle={{ maxWidth: 'var(--container-width)', display: 'flex', justifyContent: 'center', margin: 'auto', padding: '60px 0' }}>
 			<Col className='counter-col col-6 col-md-4 col-lg-2'>
 				<Counter.Card title='scooter crash'>
 					<Counter isCurrency num='2.5' after='m' />

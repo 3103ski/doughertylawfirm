@@ -13,7 +13,7 @@ function HeaderImage(props) {
 		...imgProps,
 	};
 	return (
-		<Col className='d-flex col-12'>
+		<Col className='d-flex col-12 mt-5'>
 			<div className='header-image' style={imgStyles} />
 		</Col>
 	);

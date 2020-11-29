@@ -47,7 +47,7 @@ const ImageSlider = (props) => {
 	) : null;
 	return (
 		<div>
-			<Carousel interval={props.interval ? props.interval : '4000'} activeIndex={activeIndex} next={next} previous={previous}>
+			<Carousel className='mt-5' interval={props.interval ? props.interval : '4000'} activeIndex={activeIndex} next={next} previous={previous}>
 				<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
 				{slides}
 				{controls}

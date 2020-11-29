@@ -7,7 +7,7 @@ import { SubHeaderText } from '../layoutComponents/textComponents/TextComponents
 
 export default function FormSection(props) {
 	return (
-		<LayoutSection className='form-section-container' fullWidth filterColor='rgba(0,0,0,0.5)'>
+		<LayoutSection containerClass='form-section-container' rowStyle={{ maxWidth: 'var(--container-width)', margin: 'auto' }} fullWidth filterColor='rgba(0,0,0,0.5)'>
 			<Col className='col-12 col-md-10 mx-auto'>
 				<p className='form-text'>HAVE A QUESTION?</p>
 				<h2 className='form-title'>Send us a message. We can Help!</h2>

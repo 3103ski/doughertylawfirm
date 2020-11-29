@@ -7,7 +7,7 @@ export default function HoverServices(props) {
 	const hovAssets = '/assets/images/siteWide/hovers';
 	return (
 		<>
-			<LayoutSection rowStyle={{ padding: '70px 0 !important' }}>
+			<LayoutSection rowStyle={{ padding: '40px 0' }}>
 				<Col className='col-6 col-lg-4'>
 					<HoverBox image={`${hovAssets}/concussion.jpg`} icon='fas fa-brain' title='concussions' link={ROUTES.CONCUSSION} />
 				</Col>

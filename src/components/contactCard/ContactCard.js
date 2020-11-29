@@ -12,7 +12,7 @@ export default function ContactCard(props) {
 		: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.98209439683!2d-111.92728338380093!3d33.50184298075938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0bbd1d8d2423%3A0x44373a751a511c6c!2s7201%20E%20Camelback%20Rd%2C%20Scottsdale%2C%20AZ%2085251!5e0!3m2!1sen!2sus!4v1606425547975!5m2!1sen!2sus';
 	return (
 		<>
-			<Col className='col-12 col-md-6 contact-col' style={{ backgroundImage: bgImg }}>
+			<Col className='col-12 col-lg-6 contact-col' style={{ backgroundImage: bgImg }}>
 				<div className='contact-info-container'>
 					<div className='contact-card-overlay' />
 					<Row className='contact-card-info'>

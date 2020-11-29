@@ -6,7 +6,7 @@ import { LayoutSection } from '../../../components';
 export default function InfiniteCarousel(props) {
 	const badge = `/assets/images/badges`;
 	return (
-		<LayoutSection className='carousel-layout-container'>
+		<LayoutSection className='carousel-layout-container' rowStyle={{ padding: '30px' }}>
 			<Col>
 				<div className='infinite-carousel-container'>
 					<div className='infinite-carousel-inner'>

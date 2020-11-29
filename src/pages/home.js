@@ -42,8 +42,8 @@ export default function HomePage(props) {
 			{/* 	BANNER        */}
 			{/* ***************** */}
 			<LayoutSection fullWidth containerStyle={{ backgroundColor: 'var(--primary-dark)' }}>
-				<Col md={10} className='banner-1 mx-auto d-flex flex-column align-items-center'>
-					<h1>We are the attorneys that try other attorneys' cases</h1>
+				<Col md={10} className='banner-1 mx-auto my-5 d-flex flex-column align-items-center'>
+					<h1 style={{ margin: '20px 0 30px 0' }}>We are the attorneys that try other attorneys' cases</h1>
 					<Button>LEARN MORE!</Button>
 				</Col>
 			</LayoutSection>
@@ -52,7 +52,7 @@ export default function HomePage(props) {
 			{/* 	BIO BANNER    */}
 			{/* ***************** */}
 			<LayoutSection>
-				<Col className='col-12 col-lg-6 order-1 order-lg-0'>
+				<Col className='col-12 col-lg-6 order-1 order-lg-0 my-5'>
 					<Paragraph>
 						The <strong>DOUGHERTY LAW FIRM</strong> is dedicated to helping people who have been injured by others’ carelessness, bad choices, and those who chose to violate the safety
 						systems that are designed to protect people.
@@ -63,7 +63,7 @@ export default function HomePage(props) {
 					</Paragraph>
 					<Paragraph>Let us fight for you in this terrible time.</Paragraph>
 				</Col>
-				<Col className='d-flex align-items-center justify-content-center mb-5 mb-lg-0'>
+				<Col className='d-flex align-items-center justify-content-center mt-5 mt-lg-0'>
 					<img src='/assets/images/homePage/office.jpeg' alt='office' style={{ width: '80%', borderRadius: '10px' }} />
 				</Col>
 			</LayoutSection>
@@ -72,7 +72,7 @@ export default function HomePage(props) {
 			{/* 	3 Traits      */}
 			{/* ***************** */}
 			<LayoutSection fullWidth containerStyle={{ backgroundColor: 'var(--primary-light)', padding: '50px 0px' }} rowStyle={{ maxWidth: 'var(--container-width)', margin: 'auto' }}>
-				<Col className='trait-col' lg={4}>
+				<Col className='trait-col col-11 mx-auto col-lg-4 p-4 p-lg-0'>
 					<div className='trait-icon'>
 						<i class='fas fa-user-alt'></i>
 					</div>
@@ -81,7 +81,7 @@ export default function HomePage(props) {
 						The DOUGHERTY LAW FIRM, P.A. does not represent any insurance companies and we are solely dedicated to fighting and representing the rights of the injured and/or deceased!
 					</Paragraph>
 				</Col>
-				<Col className='trait-col' lg={4}>
+				<Col className='trait-col col-10 mx-auto col-lg-4 p-4 p-lg-0'>
 					<div className='trait-icon'>
 						<i class='fas fa-gavel'></i>
 					</div>
@@ -91,7 +91,7 @@ export default function HomePage(props) {
 						relationship.
 					</Paragraph>
 				</Col>
-				<Col className='trait-col' lg={4}>
+				<Col className='trait-col col-10 mx-auto col-lg-4 p-4 p-lg-0'>
 					<div className='trait-icon'>
 						<i class='fas fa-handshake'></i>
 					</div>
