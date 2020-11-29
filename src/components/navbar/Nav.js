@@ -8,6 +8,7 @@ class MainNav extends Component {
 		this.state = {
 			activeLink: 'home',
 			showDrawerNav: false,
+			subMenu: false,
 		};
 	}
 
@@ -18,7 +19,7 @@ class MainNav extends Component {
 		});
 	}
 
-	toggleNav() {
+	toggleShowDrawerNav() {
 		console.log('toggle');
 		return this.setState({
 			showDrawerNav: !this.state.showDrawerNav,
@@ -47,24 +48,23 @@ class MainNav extends Component {
 			if (viewportWidth < 900) {
 				linkFunctions = (link) => {
 					this.selectActiveLink(link);
-					this.toggleNav();
+					this.toggleShowDrawerNav();
 				};
 			} else {
 				linkFunctions = (link) => {
 					this.selectActiveLink(link);
 				};
 			}
-			console.log(viewportWidth);
 		};
 		checkWidth();
 		window.addEventListener('resize', checkWidth);
 
 		return (
 			<>
-				<span onClick={() => this.toggleNav()} className='fas fa-bars nav-toggle'></span>
-				<div className={`${this.state.showDrawerNav ? 'showNavExit' : null}`} onClick={() => this.toggleNav()} />
+				<span onClick={() => this.toggleShowDrawerNav()} className='fas fa-bars nav-toggle'></span>
+				<div className={`${this.state.showDrawerNav ? 'showNavExit' : null}`} onClick={() => this.toggleShowDrawerNav()} />
 				<div id='main-nav' className={` main-nav-container ${this.state.showDrawerNav ? 'showNav' : null}`}>
-					<span onClick={() => this.toggleNav()} className='fas fa-times nav-close'></span>
+					<span onClick={() => this.toggleShowDrawerNav()} className='fas fa-times nav-close'></span>
 					<div className='nav-inner-container'>
 						<NavLink to={ROUTES.HOME}>
 							<img src='/assets/images/logo.png' alt='' className='nav-logo' />
@@ -86,9 +86,35 @@ class MainNav extends Component {
 									<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.TRUCKING}>
 										Trucking Accidents
 									</NavLink>
-									<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.TRAUMATIC_BRAIN_INJURY}>
-										Traumatic Brain Injury
-									</NavLink>
+
+									<div className='sub-drop-menu'>
+										<NavLink
+											onClick={() => linkFunctions('cases we handle')}
+											className={`sub-drop-btn ${this.state.subMenu ? 'activePage' : null}`}
+											to={ROUTES.TRAUMATIC_BRAIN_INJURY}>
+											Traumatic Brain Injury
+										</NavLink>
+										<div className='sub-drop-content'>
+											<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.AMNESIA}>
+												Amnesia
+											</NavLink>
+											<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.CONCUSSION}>
+												Concussions
+											</NavLink>
+											<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.LOSS_OF_CONSCIOUSNESS}>
+												Loss Of Consciousness
+											</NavLink>
+											<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.MILD_TRAUMATIC_BRAIN_INJURY}>
+												Mild Traumatic Brain Injury
+											</NavLink>
+											<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.SKULL_FRACTURES}>
+												Skull Fractures
+											</NavLink>
+											<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.SPORTS_RELATED_INJURY}>
+												Sports Related Injury
+											</NavLink>
+										</div>
+									</div>
 									<NavLink onClick={() => linkFunctions('cases we handle')} to={ROUTES.WRONGFUL_DEATH}>
 										Wrongful Death
 									</NavLink>
