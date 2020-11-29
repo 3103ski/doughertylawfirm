@@ -123,22 +123,23 @@
 .nav-toggle {
 	display: none;
 	position: fixed;
-	z-index: 100;
-	left: 20px;
-	top: 15px;
-	font-size: 1.4rem;
+	z-index: 10;
+	left: 10px;
+	top: 12px;
+	font-size: 1.3rem;
 	color: var(--primary-light);
 	background-color: var(--primary-dark);
-	padding: 10px 8px 10px 10px;
+	padding: 8px 8px 8px 9px;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50%;
+	border-radius: 3px;
 }
 
 .nav-close {
 	margin-left: auto;
 	display: none;
 	color: var(--primary-dark);
+	font-size: 1.5rem;
 }
 
 .nav-toggle:hover,
@@ -165,7 +166,7 @@
 	}
 
 	.showNavExit {
-		position: absolute;
+		position: fixed;
 		left: 0;
 		top: 0;
 		width: 100%;
