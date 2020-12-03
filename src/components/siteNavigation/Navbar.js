@@ -249,10 +249,10 @@ export default class Navbar extends Component {
 									<RenderLink route={R.HOME} activePrimary='home'>
 										home
 									</RenderLink>
-									{this.state.isMobile ? casesLinks() : null}
 									<a onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'cases' ? '' : 'cases' })} className='menu-link main-link'>
 										cases we handle
 									</a>
+									{this.state.isMobile ? casesLinks() : null}
 									<a onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'resources' ? '' : 'resources' })} className='menu-link main-link'>
 										resources
 									</a>
