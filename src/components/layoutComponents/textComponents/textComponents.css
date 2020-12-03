@@ -19,4 +19,30 @@ h1 {
 .bullet-item a,
 p a {
 	color: blue;
+	overflow-wrap: anywhere;
+}
+
+@media only screen and (max-width: 1180px) {
+	h1 {
+		font-size: 1.5rem;
+		margin: 25px auto 15px auto;
+		/* padding: 0 20px; */
+	}
+
+	h2 {
+		font-size: 1.35rem;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		padding: 0;
+		margin: 10px 0;
+	}
+
+	p,
+	h1,
+	h2 {
+		text-align: center;
+	}
 }
