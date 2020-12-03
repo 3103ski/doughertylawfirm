@@ -45,4 +45,7 @@
 		animation-duration: 0.2s;
 		animation-timing-function: ease-in-out;
 	}
+	.stick-title .title-text {
+		padding-top: 30px;
+	}
 }
