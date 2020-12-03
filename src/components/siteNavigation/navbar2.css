@@ -177,6 +177,10 @@
 	color: var(--primary-dark);
 }
 
+window {
+	transition: 2s;
+}
+
 /* ******************/
 /* ******************/
 /*      MOBILE      */

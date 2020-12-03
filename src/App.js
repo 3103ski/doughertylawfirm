@@ -4,6 +4,7 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import ScrollToTop from './util/ScrollToTop';
 // Components
 import { Navbar, Footer } from './components';
+// import './global.css';
 // Pages
 import {
 	Home,
@@ -30,6 +31,13 @@ import {
 import * as ROUTES from './constants/routes';
 
 function App() {
+	window.addEventListener('scroll', () => {
+		if (window.pageYOffset > 300) {
+			document.querySelector('.toTop').classList.add('show');
+		} else {
+			document.querySelector('.toTop').classList.remove('show');
+		}
+	});
 	return (
 		<div className='App'>
 			<Router>
@@ -94,6 +102,15 @@ function App() {
 				</Switch>
 				<Footer />
 			</Router>
+			<i
+				className='fas fa-arrow-alt-circle-up toTop'
+				onClick={() =>
+					window.scrollTo({
+						top: 0,
+						left: 0,
+						behavior: 'smooth',
+					})
+				}></i>
 		</div>
 	);
 }
