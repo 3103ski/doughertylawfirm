@@ -133,7 +133,6 @@ export default class Navbar extends Component {
 				linkClasses = link === this.state.activePrimary ? `${linkClasses} activePrimary` : linkClasses;
 			} else {
 				linkClasses = `subLink ${linkClasses}`;
-				// linkClasses = activeSublink === this.state.activeSublink ? `${linkClasses} activeSublink` : `subLink ${linkClasses}`;
 			}
 
 			return (
@@ -147,9 +146,17 @@ export default class Navbar extends Component {
 			return (
 				<div className={`dropmenu-cases drop-menu ${this.state.mobileNavOpen ? 'open' : ''} ${this.state.activeDrop === 'cases' ? 'activeDrop' : ''}`}>
 					{!this.state.isMobile ? (
-						<RenderLink route={R.CASES_WE_HANDLE} activePrimary='cases-we-handle' activeDrop='cases' activeSublink='cases-we-handle'>
-							general info
-						</RenderLink>
+						<>
+							<a
+								onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'cases' ? '' : '' })}
+								className='menu-link main-link'
+								style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
+								<span className='fas fa-times' /> close
+							</a>
+							<RenderLink route={R.CASES_WE_HANDLE} activePrimary='cases-we-handle' activeDrop='cases' activeSublink='cases-we-handle'>
+								general info
+							</RenderLink>
+						</>
 					) : null}
 					<RenderLink route={R.TRUCKING} activePrimary='cases-we-handle' activeDrop='cases' activeSublink='truck-crashes'>
 						truck crashes
@@ -174,6 +181,12 @@ export default class Navbar extends Component {
 		const resourcesLinks = () => {
 			return (
 				<div className={`dropmenu-resources drop-menu ${this.state.mobileNavOpen ? 'open' : ''} ${this.state.activeDrop === 'resources' ? 'activeDrop' : ''}`}>
+					<a
+						onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'resources' ? '' : '' })}
+						className='menu-link main-link'
+						style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
+						<span className='fas fa-times' /> close
+					</a>
 					<RenderLink route={R.CRASHES_NOT_ACCIDENTS} activePrimary='resources' activeDrop='resources' activeSublink='crashes-not-accidents'>
 						crashes not accidents
 					</RenderLink>
@@ -197,9 +210,17 @@ export default class Navbar extends Component {
 			return (
 				<div className={`dropmenu-brain drop-menu ${this.state.mobileNavOpen ? 'open' : ''}  ${this.state.activeDrop === 'brain' ? 'activeDrop' : ''}`}>
 					{!this.state.isMobile ? (
-						<RenderLink route={R.TRAUMATIC_BRAIN_INJURY} activePrimary='cases-we-handle' activeDrop='brain' activeSublink='traumatic-brain-injury'>
-							general info
-						</RenderLink>
+						<>
+							<a
+								onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'brain' ? 'cases' : '' })}
+								className='menu-link main-link'
+								style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
+								<span className='fas fa-arrow-left' /> back
+							</a>
+							<RenderLink route={R.TRAUMATIC_BRAIN_INJURY} activePrimary='cases-we-handle' activeDrop='brain' activeSublink='traumatic-brain-injury'>
+								general info
+							</RenderLink>
+						</>
 					) : null}
 
 					<RenderLink route={R.AMNESIA} activePrimary='cases-we-handle' activeDrop='brain' activeSublink='amnesia'>

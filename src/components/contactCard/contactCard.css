@@ -40,3 +40,7 @@
 	z-index: 0;
 	background-color: rgb(217 217 217 / 65%);
 }
+
+iframe {
+	height: 350px;
+}

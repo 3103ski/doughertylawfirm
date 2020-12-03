@@ -132,8 +132,8 @@
 
 .drop-menu .subLink,
 .drop-menu .activeSublink {
-	padding: 2px 15px;
-	font-size: 0.9rem;
+	padding: 3px 12px;
+	font-size: 0.8rem;
 	letter-spacing: 0.05rem;
 	text-align: center;
 }
@@ -189,7 +189,6 @@
 	/* ********** */
 
 	.mobile-nav-outer-container {
-		/* width: 100%; */
 		height: 100vh;
 		position: fixed;
 		left: -100%;
