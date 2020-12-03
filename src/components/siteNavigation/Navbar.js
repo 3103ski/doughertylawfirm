@@ -218,44 +218,46 @@ export default class Navbar extends Component {
 		});
 
 		return (
-			<div className={`mobile-nav-outer-container ${this.state.mobileNavOpen ? 'open' : ''}`} onClick={this.state.mobileNavOpen ? () => this.toggleNav() : null}>
-				<div className={`main-nav-container ${this.state.mobileNavOpen ? 'open' : ''}`}>
-					<RenderLink route={R.HOME} activePrimary='home' classes={`nav-logo ${this.state.mobileNavOpen ? 'open' : ''}`}>
-						<img style={{ width: '100%' }} src='/assets/images/logo.png' />
-					</RenderLink>
+			<>
+				<i className={`fas fa-${this.mobileNavOpen ? 'times' : 'bars'} toggle-nav`} onClick={() => this.toggleNav()} />
+				<div className={`mobile-nav-outer-container ${this.state.mobileNavOpen ? 'open' : ''}`} onClick={this.state.mobileNavOpen ? () => this.toggleNav() : null}>
+					<div className={`main-nav-container ${this.state.mobileNavOpen ? 'open' : ''}`}>
+						<RenderLink route={R.HOME} activePrimary='home' classes={`nav-logo ${this.state.mobileNavOpen ? 'open' : ''}`}>
+							<img style={{ width: '100%' }} src='/assets/images/logo.png' />
+						</RenderLink>
 
-					<i className={`fas fa-${this.mobileNavOpen ? 'times' : 'bars'} toggle-nav`} onClick={() => this.toggleNav()} />
-					<div className='mobile-links-container'>
-						<div className={`nav-controls-container ${this.state.mobileNavOpen ? 'open' : ''}`}>
-							<div className={`nav-main-controls menu ${this.state.activeMenu === 'main' ? 'activeMenu' : ''}`}>
-								<RenderLink route={R.HOME} activePrimary='home'>
-									home
-								</RenderLink>
-								<RenderLink route={R.CASES_WE_HANDLE} activePrimary='cases-we-handle' activeDrop='cases' activeSublink={`cases-we-handle`}>
-									cases we handle
-								</RenderLink>
-								{this.state.isMobile ? casesLinks() : null}
-								{/* <RenderLink route={R.ABOUT_US} activePrimary='resources' activeDrop='resources' activeSublink='about-us'>
+						<div className='mobile-links-container'>
+							<div className={`nav-controls-container ${this.state.mobileNavOpen ? 'open' : ''}`}>
+								<div className={`nav-main-controls menu ${this.state.activeMenu === 'main' ? 'activeMenu' : ''}`}>
+									<RenderLink route={R.HOME} activePrimary='home'>
+										home
+									</RenderLink>
+									<RenderLink route={R.CASES_WE_HANDLE} activePrimary='cases-we-handle' activeDrop='cases' activeSublink={`cases-we-handle`}>
+										cases we handle
+									</RenderLink>
+									{this.state.isMobile ? casesLinks() : null}
+									{/* <RenderLink route={R.ABOUT_US} activePrimary='resources' activeDrop='resources' activeSublink='about-us'>
 									resources
 								</RenderLink> */}
-								<a onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'resources' ? '' : 'resources' })} className='menu-link main-link'>
-									resources
-								</a>
-								{this.state.isMobile ? resourcesLinks() : null}
-								{/* <RenderLink route={R.CONTACT_US} activePrimary='resources' activeDrop='resources' activeSublink='contact-us'>
+									<a onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'resources' ? '' : 'resources' })} className='menu-link main-link'>
+										resources
+									</a>
+									{this.state.isMobile ? resourcesLinks() : null}
+									{/* <RenderLink route={R.CONTACT_US} activePrimary='resources' activeDrop='resources' activeSublink='contact-us'>
 									call now
 								</RenderLink> */}
-								<a href='tel:+18002310323' className='menu-link main-link'>
-									call now!
-								</a>
+									<a href='tel:+18002310323' className='menu-link main-link'>
+										call now!
+									</a>
+								</div>
 							</div>
+							{this.state.isMobile ? null : casesLinks()}
+							{this.state.isMobile ? null : resourcesLinks()}
+							{this.state.isMobile ? null : brainInjuryLinks()}
 						</div>
-						{this.state.isMobile ? null : casesLinks()}
-						{this.state.isMobile ? null : resourcesLinks()}
-						{this.state.isMobile ? null : brainInjuryLinks()}
 					</div>
 				</div>
-			</div>
+			</>
 		);
 	}
 }

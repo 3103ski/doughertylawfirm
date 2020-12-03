@@ -141,7 +141,7 @@
 		width: 100%;
 		height: 100vh;
 		position: fixed;
-		z-index: 1;
+		z-index: -1;
 	}
 
 	.main-nav-container {
@@ -157,6 +157,7 @@
 
 	.mobile-nav-outer-container.open {
 		background-color: #636363b8;
+		z-index: 1;
 	}
 
 	.main-nav-container.open {
@@ -234,5 +235,7 @@
 
 	.main-link.active {
 		background-color: transparent;
+		color: var(--primary-dark);
+		border: none;
 	}
 }
