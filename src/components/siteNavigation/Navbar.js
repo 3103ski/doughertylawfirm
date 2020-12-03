@@ -25,6 +25,15 @@ export default class Navbar extends Component {
 		};
 	}
 
+	stickyNav() {
+		const navContainer = document.getElementById('main-nav');
+		if (window.pageYOffset >= 80) {
+			navContainer.classList.add('sticky');
+		} else {
+			navContainer.classList.remove('sticky');
+		}
+	}
+
 	checkActivePage = () => {
 		const currentPath = this.removeSlash(window.location.pathname);
 		console.log(currentPath);
@@ -103,6 +112,12 @@ export default class Navbar extends Component {
 	}
 
 	toggleNav() {
+		const filter = document.getElementById('nav-filter');
+		if (!this.state.mobileNavOpen) {
+			filter.classList.add('filter-on');
+		} else {
+			filter.classList.remove('filter-on');
+		}
 		this.setState({
 			...this.state,
 			mobileNavOpen: !this.state.mobileNavOpen,
@@ -209,6 +224,7 @@ export default class Navbar extends Component {
 			);
 		};
 
+		window.addEventListener('scroll', () => this.stickyNav());
 		window.addEventListener('resize', () => this.checkWidth());
 		window.addEventListener('load', () => {
 			this.checkWidth();
@@ -220,8 +236,9 @@ export default class Navbar extends Component {
 		return (
 			<>
 				<i className={`fas fa-${this.mobileNavOpen ? 'times' : 'bars'} toggle-nav`} onClick={() => this.toggleNav()} />
-				<div className={`mobile-nav-outer-container ${this.state.mobileNavOpen ? 'open' : ''}`} onClick={this.state.mobileNavOpen ? () => this.toggleNav() : null}>
-					<div className={`main-nav-container ${this.state.mobileNavOpen ? 'open' : ''}`}>
+				<div id='nav-filter' className={`close-nav-filter ${this.state.mobileNavOpen ? 'filter-on' : ''}`} onClick={this.state.mobileNavOpen ? () => this.toggleNav() : null} />
+				<div className={`mobile-nav-outer-container ${this.state.mobileNavOpen ? 'open' : ''} ${this.state.activeDrop === '' ? '' : 'dropMargin'}`}>
+					<div id='main-nav' className={`main-nav-container ${this.state.mobileNavOpen ? 'open' : ''}`}>
 						<RenderLink route={R.HOME} activePrimary='home' classes={`nav-logo ${this.state.mobileNavOpen ? 'open' : ''}`}>
 							<img style={{ width: '100%' }} src='/assets/images/logo.png' />
 						</RenderLink>
@@ -232,20 +249,14 @@ export default class Navbar extends Component {
 									<RenderLink route={R.HOME} activePrimary='home'>
 										home
 									</RenderLink>
-									<RenderLink route={R.CASES_WE_HANDLE} activePrimary='cases-we-handle' activeDrop='cases' activeSublink={`cases-we-handle`}>
-										cases we handle
-									</RenderLink>
 									{this.state.isMobile ? casesLinks() : null}
-									{/* <RenderLink route={R.ABOUT_US} activePrimary='resources' activeDrop='resources' activeSublink='about-us'>
-									resources
-								</RenderLink> */}
+									<a onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'cases' ? '' : 'cases' })} className='menu-link main-link'>
+										cases we handle
+									</a>
 									<a onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'resources' ? '' : 'resources' })} className='menu-link main-link'>
 										resources
 									</a>
 									{this.state.isMobile ? resourcesLinks() : null}
-									{/* <RenderLink route={R.CONTACT_US} activePrimary='resources' activeDrop='resources' activeSublink='contact-us'>
-									call now
-								</RenderLink> */}
 									<a href='tel:+18002310323' className='menu-link main-link'>
 										call now!
 									</a>
