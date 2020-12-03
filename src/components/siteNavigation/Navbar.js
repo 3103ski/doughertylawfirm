@@ -235,7 +235,7 @@ export default class Navbar extends Component {
 
 		return (
 			<>
-				<i className={`fas fa-${this.mobileNavOpen ? 'times' : 'bars'} toggle-nav`} onClick={() => this.toggleNav()} />
+				<i className={`fas fa-${this.state.mobileNavOpen ? 'times' : 'bars'} toggle-nav`} onClick={() => this.toggleNav()} />
 				<div id='nav-filter' className={`close-nav-filter ${this.state.mobileNavOpen ? 'filter-on' : ''}`} onClick={this.state.mobileNavOpen ? () => this.toggleNav() : null} />
 				<div className={`mobile-nav-outer-container ${this.state.mobileNavOpen ? 'open' : ''} ${this.state.activeDrop === '' ? '' : 'dropMargin'}`}>
 					<div id='main-nav' className={`main-nav-container ${this.state.mobileNavOpen ? 'open' : ''}`}>

@@ -20,32 +20,6 @@
 	width: 100%;
 }
 
-@media only screen and (max-width: 991px) {
-	.landing-logo {
-		margin-bottom: 60px;
-	}
-	.landing-bullet-list {
-		width: 80%;
-	}
-	.vimeo-col {
-		height: 350px;
-		margin-bottom: 40px;
-	}
-	.landing-row {
-		padding: 0;
-	}
-}
-@media only screen and (max-width: 576px) {
-	.landing-logo {
-		margin-bottom: 0px;
-	}
-	.landing-bullet-list {
-		width: 90%;
-	}
-	.vimeo-col {
-		height: 300px;
-	}
-}
 .landing-bullet {
 	display: flex;
 	align-items: flex-start;
@@ -107,4 +81,37 @@
 .banner-2 h1,
 .banner-2 p {
 	color: var(--primary-light);
+}
+
+@media only screen and (max-width: 991px) {
+	.landing-logo {
+		margin-bottom: 60px;
+	}
+	.landing-bullet-list {
+		width: 80%;
+	}
+	.vimeo-col {
+		height: 350px;
+		margin-bottom: 40px;
+	}
+	.landing-row {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.landing-logo {
+		margin-bottom: 0px;
+	}
+	.landing-bullet-list {
+		width: 90%;
+	}
+	.vimeo-col {
+		height: 300px;
+	}
+
+	.landing-bullet span {
+		font-size: 1.7rem;
+		margin-top: 1rem;
+		margin-right: 0.8rem;
+	}
 }

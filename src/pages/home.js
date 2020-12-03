@@ -34,7 +34,7 @@ export default function HomePage(props) {
 						</div>
 					</div>
 					<NavLink to={ROUTES.CASES_WE_HANDLE}>
-						<Button btnStyle={{ border: 'solid 3px var(--primary-dark)', textTransform: 'uppercase' }}>cases we handle</Button>
+						<Button btnStyle={{ border: 'solid 1px var(--primary-dark)', textTransform: 'uppercase' }}>cases we handle</Button>
 					</NavLink>
 				</Col>
 				<Col className='col-12 mx-auto col-lg-6 vimeo-col'>
