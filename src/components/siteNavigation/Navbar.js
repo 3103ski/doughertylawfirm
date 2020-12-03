@@ -181,12 +181,14 @@ export default class Navbar extends Component {
 		const resourcesLinks = () => {
 			return (
 				<div className={`dropmenu-resources drop-menu ${this.state.mobileNavOpen ? 'open' : ''} ${this.state.activeDrop === 'resources' ? 'activeDrop' : ''}`}>
-					<a
-						onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'resources' ? '' : '' })}
-						className='menu-link main-link'
-						style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
-						<span className='fas fa-times' /> close
-					</a>
+					{this.state.isMobile ? null : (
+						<a
+							onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'resources' ? '' : '' })}
+							className='menu-link main-link'
+							style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
+							<span className='fas fa-times' /> close
+						</a>
+					)}
 					<RenderLink route={R.CRASHES_NOT_ACCIDENTS} activePrimary='resources' activeDrop='resources' activeSublink='crashes-not-accidents'>
 						crashes not accidents
 					</RenderLink>
