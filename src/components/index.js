@@ -1,7 +1,7 @@
 //______________________
 // App Components
 //----------------------
-export { default as Navbar } from './navbar/Nav';
+export { default as Navbar } from './siteNavigation/Navbar';
 export { default as Footer } from './layoutComponents/footer/Footer';
 //______________________
 // Layout Components

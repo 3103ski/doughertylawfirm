@@ -1,0 +1,241 @@
+/* ************************** */
+/*    MAIN CONTAINERS         */
+/* ************************** */
+
+.main-nav-container,
+.nav-logo-container,
+.nav-links-container {
+	display: flex;
+	align-items: center;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+.main-nav-container {
+	height: 70px;
+	width: 100%;
+	background-color: var(--primary-light);
+}
+
+.nav-logo-container {
+	width: 170px;
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.nav-links-container {
+	margin-left: auto;
+}
+
+/* ____ */
+/* DROP MENUS */
+
+.drop-menu-container {
+	position: relative;
+	display: inline-block;
+}
+
+.sub-menu-container:hover .sub-menu-content,
+.sub-menu-content:hover {
+	right: -100%;
+	top: 0;
+}
+
+.sub-menu-container,
+.sub-menu-btn,
+.sub-menu-content {
+	width: 100%;
+}
+
+.drop-menu-content,
+.sub-menu-content {
+	display: none;
+	opacity: 0;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	background-color: var(--primary-light);
+	min-width: 200px;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.mobile-nav-links-container {
+	position: absolute;
+	/* height: 100vh; */
+	z-index: 100;
+	top: -100vh;
+	flex-direction: column;
+	padding-top: 100px;
+	width: 100%;
+	transition: 0.3s;
+	background-color: var(--primary-light);
+}
+
+/* .show-mobile-drop-menu {
+	display: block;
+} */
+
+.open-mobile-nav {
+	top: 0;
+}
+
+.mobile-nav-logo-container {
+	width: 135px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 101;
+}
+
+.mobile-nav-toggle {
+	position: absolute;
+	font-size: 1.35rem;
+	z-index: 101;
+	right: 20px;
+}
+
+.mobile-nav-toggle:hover {
+	cursor: pointer;
+}
+
+/* ********************* */
+/*    LINKS AND LOGO     */
+/* ********************* */
+
+.nav-logo {
+	width: 100%;
+}
+
+.sub-link:hover,
+.activeSubMenu,
+.activeSublink {
+	background-color: var(--primary-dark);
+	color: var(--primary-light);
+}
+
+.menu-link {
+	margin: 0 10px;
+	padding: 0 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.15rem;
+	font-size: 0.9rem;
+}
+
+.sub-link {
+	font-size: 0.8rem;
+	margin: 0;
+	display: flex;
+	width: 100%;
+	padding: 10px 9px;
+}
+
+.activePrimary {
+	border-top: solid 3px var(--primary-dark);
+	padding-top: 10px;
+}
+
+/* ******************************* */
+/*      TRANSITIONS / ANIMATIONS   */
+/* ******************************* */
+
+@keyframes showMenu {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* Adds hover effects to links and menu btns on desktop */
+
+	.drop-menu-container:hover .drop-menu-content,
+	.drop-menu-content:hover,
+	.sub-menu-container:hover .sub-menu-content,
+	.sub-menu-content:hover {
+		display: block;
+		animation: showMenu;
+		animation-duration: 0.25s;
+		animation-timing-function: ease-in;
+		animation-fill-mode: forwards;
+	}
+	.sub-link:hover,
+	.activeSubMenu,
+	.activeSublink {
+		transition: 0.15s;
+		transition-timing-function: ease-in;
+	}
+
+	#nav-toggle {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.sub-menu-content,
+	.drop-menu-content {
+		position: relative;
+		display: block;
+		opacity: 1;
+		box-shadow: unset;
+		height: 0px;
+		overflow: hidden;
+		width: 80%;
+		transition: 0.25s;
+	}
+
+	.open-sub-content {
+		height: 240px;
+	}
+
+	.menu-link {
+		margin: 0 10px 15px 20px;
+		padding: 0px;
+		font-size: 0.9rem;
+		line-height: 2rem;
+		justify-content: center;
+		display: flex;
+	}
+
+	.non-drop-link {
+		width: 100%;
+	}
+
+	.activePrimary {
+		border: unset;
+		padding: 4px;
+		border-radius: 4px;
+	}
+
+	.mobile-active-drop {
+		position: fixed;
+		box-shadow: unset;
+		overflow: hidden;
+		top: 200px;
+		left: 0;
+		width: 100%;
+		background-color: transparent;
+	}
+}
+
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */

@@ -22,5 +22,6 @@ export const CRASHES_NOT_ACCIDENTS = '/crashes-not-accidents';
 export const OUTSIDE_ATTORNEY_CONSULTS = '/outside-attorney-consults';
 export const CONTACT_US = '/contact-us';
 export const ABOUT_US = '/about-us';
+export const VIDEOS = '/videos';
 export const ADAM_BIO = '/adam-bio';
 export const GIANCARLO_BIO = '/giancarlo-bio';
