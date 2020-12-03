@@ -45,3 +45,9 @@
 .infinite-carousel-inner .box img {
 	width: 100%;
 }
+
+@media only screen and (max-width: 992px) {
+	.carousel-layout-container {
+		padding: 0 !important;
+	}
+}

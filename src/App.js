@@ -103,7 +103,7 @@ function App() {
 				<Footer />
 			</Router>
 			<i
-				className='fas fa-arrow-alt-circle-up toTop'
+				className='fas fa-arrow-up toTop'
 				onClick={() =>
 					window.scrollTo({
 						top: 0,
