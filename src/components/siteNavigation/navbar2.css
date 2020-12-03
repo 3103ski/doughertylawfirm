@@ -34,6 +34,7 @@
 	align-items: center;
 	position: relative;
 	overflow: visible;
+	box-shadow: 0px 2px 5px #0000005c;
 }
 
 /* CONTROLLER CONTAINER  */
@@ -59,6 +60,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	box-shadow: 0px 2px 5px #0000005c;
 }
 .drop-menu-inner {
 	width: 100%;
@@ -212,6 +214,11 @@
 		padding-top: 87px;
 	}
 
+	.main-nav-container,
+	.drop-menu {
+		box-shadow: none;
+	}
+
 	.mobile-nav-outer-container.open {
 		display: block;
 		z-index: 3;
@@ -322,8 +329,6 @@
 		}
 	}
 	.close-nav-filter.filter-on {
-		/* opacity: 1;
-		z-index: 3; */
 		cursor: pointer;
 		position: fixed;
 		animation: filterOn;

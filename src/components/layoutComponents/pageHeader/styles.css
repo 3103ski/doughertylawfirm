@@ -1,7 +1,12 @@
 .title-container {
 	width: 100%;
-	background-image: url('/assets/images/siteWide/page-banner-bg.jpeg');
+	/* background-image: url('/assets/images/siteWide/page-banner-bg.jpeg'); */
+	background-color: #5255bd;
 	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 0px -4px 11px #13121254;
 }
 
 .title-text {
@@ -10,4 +15,34 @@
 	padding: 20px;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+@media only screen and (max-width: 1180px) {
+	.title-text {
+		padding-top: 75px;
+		font-size: 2rem;
+		padding-bottom: 30px;
+	}
+	.title-container {
+		background-image: unset;
+		background-color: var(--primary-dark);
+	}
+
+	@keyframes stickTitle {
+		from {
+			top: -200px;
+		}
+		to {
+			top: 0%;
+		}
+	}
+	.stick-title {
+		position: fixed;
+		top: 0px;
+		z-index: 2;
+		animation: stickTitle;
+		animation-fill-mode: forwards;
+		animation-duration: 0.2s;
+		animation-timing-function: ease-in-out;
+	}
 }
