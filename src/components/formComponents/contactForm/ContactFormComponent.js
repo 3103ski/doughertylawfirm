@@ -37,7 +37,8 @@ class ContactForm extends Component {
 					<input type='email' name='email' />
 					<textarea name='feedback'></textarea>
 				</form>
-				<Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)} method='post' data-netlify='true' name='contact-dougherty'>
+				<Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)} method='post' data-netlify='true' netlify name='contact-dougherty'>
+					{/* <Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)} method='post' data-netlify='true' netlify name='contact-dougherty'> */}
 					<Row className='form-group'>
 						<Col className='col-12 col-lg-6'>
 							<Label htmlFor='firstName' className='d-none'>
