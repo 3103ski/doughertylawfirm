@@ -32,11 +32,6 @@ class ContactForm extends Component {
 	render() {
 		return (
 			<>
-				{/* <form name='contact' netlify netlify-honeypot='bot-field' hidden>
-					<input type='text' name='firstName' />
-					<input type='email' name='email' />
-					<textarea name='feedback'></textarea>
-				</form> */}
 				<form style={{ width: '100%' }} model='contactForm' method='post' data-netlify='true' name='contact-dougherty'>
 					{/* <input type='hidden' name='form-name' value='contact-dougherty' /> */}
 					{/* <Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)} method='post' data-netlify='true' netlify name='contact-dougherty'> */}
