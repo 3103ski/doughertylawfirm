@@ -32,8 +32,8 @@ class ContactForm extends Component {
 	render() {
 		return (
 			<>
-				<form style={{ width: '100%' }} model='contactForm' method='post' data-netlify='true' name='contact-dougherty'>
-					{/* <input type='hidden' name='form-name' value='contact-dougherty' /> */}
+				<form style={{ width: '100%' }} model='contactForm' method='post' data-netlify='true' name='contact'>
+					<input type='hidden' name='form-name' value='contact' />
 					{/* <Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)} method='post' data-netlify='true' netlify name='contact-dougherty'> */}
 					{/* <Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)} method='post' data-netlify='true' netlify name='contact-dougherty'> */}
 					<Row className='form-group'>
