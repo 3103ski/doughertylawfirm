@@ -153,9 +153,9 @@
 .nav-logo {
 	position: fixed;
 	z-index: 100;
-	top: 12px;
+	top: 5px;
 	left: 5px;
-	width: 150px;
+	width: 200px;
 	margin-left: 10px;
 	border: none;
 }
@@ -335,8 +335,4 @@
 		animation-duration: 0.2s;
 		animation-fill-mode: forwards;
 	}
-
-	/* @media only screen and (max-height: 450px) and (max-width: 991px) {
-
-	} */
 }

@@ -1,22 +1,26 @@
 import React from 'react';
 import './textComponents.css';
 
-export function Paragraph(props) {
-	return <p>{props.children}</p>;
+export function Paragraph({ children, ...restProps }) {
+	return <p {...restProps}>{children}</p>;
 }
 
-export function SubHeaderText(props) {
-	return <h2>{props.children}</h2>;
+export function SubHeaderText({ children, ...restProps }) {
+	return <h2 {...restProps}>{children}</h2>;
 }
 
-export function HeaderText(props) {
-	return <h1>{props.children}</h1>;
+export function HeaderText({ children, ...restProps }) {
+	return <h1 {...restProps}>{children}</h1>;
 }
 
-export function BulletList(props) {
-	return <ul>{props.children}</ul>;
+export function BulletList({ children, ...restProps }) {
+	return <ul {...restProps}>{children}</ul>;
 }
 
-export function BulletItem(props) {
-	return <li className='bullet-item'>{props.children}</li>;
+export function BulletItem({ children, ...restProps }) {
+	return (
+		<li {...restProps} className='bullet-item'>
+			{children}
+		</li>
+	);
 }

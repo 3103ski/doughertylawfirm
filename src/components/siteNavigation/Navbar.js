@@ -153,11 +153,11 @@ export default class Navbar extends Component {
 								style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
 								<span className='fas fa-times' /> close
 							</a>
-							<RenderLink route={R.CASES_WE_HANDLE} activePrimary='cases-we-handle' activeDrop='cases' activeSublink='cases-we-handle'>
-								general info
-							</RenderLink>
 						</>
 					) : null}
+					<RenderLink route={R.CASES_WE_HANDLE} activePrimary='cases-we-handle' activeDrop='cases' activeSublink='cases-we-handle'>
+						general info
+					</RenderLink>
 					<RenderLink route={R.TRUCKING} activePrimary='cases-we-handle' activeDrop='cases' activeSublink='truck-crashes'>
 						truck crashes
 					</RenderLink>
@@ -219,11 +219,11 @@ export default class Navbar extends Component {
 								style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
 								<span className='fas fa-arrow-left' /> back
 							</a>
-							<RenderLink route={R.TRAUMATIC_BRAIN_INJURY} activePrimary='cases-we-handle' activeDrop='brain' activeSublink='traumatic-brain-injury'>
-								general info
-							</RenderLink>
 						</>
 					) : null}
+					<RenderLink route={R.TRAUMATIC_BRAIN_INJURY} activePrimary='cases-we-handle' activeDrop='brain' activeSublink='traumatic-brain-injury'>
+						general info
+					</RenderLink>
 
 					<RenderLink route={R.AMNESIA} activePrimary='cases-we-handle' activeDrop='brain' activeSublink='amnesia'>
 						amnesia

@@ -16,14 +16,14 @@ function AboutUsPage({ animation, children, ...restProps }) {
 					</Col>
 				</LayoutSection>
 				<LayoutSection className=''>
-					<Col className='col-12 col-md-6 order-0'>
+					<Col className='col-12 col-md-6 order-0 mt-5'>
 						<SubHeaderText>Giancarlo R. Cellini, Esq</SubHeaderText>
 						<Paragraph>
 							Giancarlo Cellini is an Of Councel attorney with the DOUGHERTY LAW FIRM’S trial team. He started his legal career while still a teenager as an office assistant for a solo
 							practitioner.
 						</Paragraph>
 					</Col>
-					<Col className='col-12 col-md-6 order-2 order-md-1'>
+					<Col className='col-12 col-md-6 order-2 order-md-1 mt-5'>
 						<SubHeaderText>Adam T. Dougherty, Esq.</SubHeaderText>
 						<Paragraph>
 							Adam Dougherty is the founding partner of DOUGHERTY LAW FIRM. He has been involved with the justice system since 1993, first in law enforcement and then as an attorney. Mr.
@@ -31,19 +31,19 @@ function AboutUsPage({ animation, children, ...restProps }) {
 							prestigious Million Dollar Advocates and his mission is to give a voice to the voiceless in a court system that is often stacked against the “little guy.”
 						</Paragraph>
 					</Col>
-					<Col className='col-12 col-md-6 d-flex justify-content-center align-items-center order-1 order-md-2'>
+					<Col className='col-12 col-md-6 d-flex justify-content-center align-items-center order-1 order-md-2 mb-5'>
 						<Button isNavLink to={ROUTES.GIANCARLO_BIO}>
 							Learn More
 						</Button>
 					</Col>
-					<Col className='col-12 col-md-6 d-flex justify-content-center align-items-center order-3'>
+					<Col className='col-12 col-md-6 d-flex justify-content-center align-items-center order-3 mb-5'>
 						<Button isNavLink to={ROUTES.ADAM_BIO}>
 							Learn More
 						</Button>
 					</Col>
 				</LayoutSection>
 				<LayoutSection>
-					<Col className='col-12 col-md-11 mx-auto'>
+					<Col className='col-12 col-md-11 mx-auto mt-2 mb-5 my-md-4'>
 						<Paragraph>
 							The <strong>DOUGHERTY LAW FIRM</strong> is dedicated to helping their clients recover for injuries they have suffered due to the wrongful conduct of others. While trial
 							attorneys have been ridiculed by the insurance industry and politicians, we are PROUD to call ourselves trial attorneys.

@@ -1,6 +1,10 @@
+// React
 import React from 'react';
-
 import { Col } from 'reactstrap';
+
+// Styles
+import './styles/casesWeHandle.css';
+
 // Components
 import { PageHeader, LayoutSection, ImageSlider, HeaderText, Paragraph, HoverServices, ImgReel, RouteAnimation } from '../components';
 
@@ -17,9 +21,9 @@ function CasesWeHandle(props) {
 					</Col>
 				</LayoutSection>
 				<LayoutSection className=''>
-					<Col className='col-12 d-flex align-items-center justify-content-center mb-5'>
-						<img src='/assets/images/icons/law-scale.png' alt='balance' width='100' />
-						<h1 style={{ fontSize: '3rem' }}>OUR PROMISE</h1>
+					<Col className='col-12 promise-header'>
+						<i class='fas fa-balance-scale '></i>
+						<h1>OUR PROMISE</h1>
 					</Col>
 					<Col md={6}>
 						<Paragraph>

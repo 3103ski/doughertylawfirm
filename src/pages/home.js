@@ -2,7 +2,7 @@ import React from 'react';
 // import * as ROUTES from '../constants/routes';
 import { LayoutSection, Button, Paragraph, SubHeaderText, HeaderText, CounterSection, HoverServices, ImgReel, Vimeo, RouteAnimation, FormSection } from '../components';
 import { Col } from 'reactstrap';
-import './styles/styles.css';
+import './styles/home.css';
 import * as ROUTES from '../constants/routes';
 import { NavLink } from 'react-router-dom';
 
@@ -14,10 +14,10 @@ export default function HomePage(props) {
 			{/* ***************** */}
 			<LayoutSection fullWidth rowStyle={{ maxWidth: 'var(--container-width)', margin: 'auto' }} containerClass='landing-container' rowClass='landing-row' filterColor='#ffffff9e'>
 				<div className='bg-filter' />
-				<Col className='col-8 col-md-6 mx-auto d-lg-none'>
+				<Col className='col-8 col-md-6 mx-auto d-lg-none '>
 					<img className='landing-logo' src='/assets/images/logo.png' />
 				</Col>
-				<Col className='col-12 col-lg-5  mx-auto d-flex flex-column align-items-center order-1 order-lg-0'>
+				<Col className='col-12 col-lg-5  mx-auto d-flex flex-column align-items-center order-1 order-lg-0 my-lg-5'>
 					<img className='landing-logo d-none d-lg-inline-block' src='/assets/images/logo.png' />
 					<div className='landing-bullet-list'>
 						<div className='landing-bullet'>
@@ -37,7 +37,7 @@ export default function HomePage(props) {
 						<Button btnStyle={{ border: 'solid 1px var(--primary-dark)', textTransform: 'uppercase' }}>cases we handle</Button>
 					</NavLink>
 				</Col>
-				<Col className='col-12 mx-auto col-lg-6 vimeo-col'>
+				<Col className='col-12 mx-auto col-lg-6 vimeo-col my-lg-5 pt-lg-5'>
 					<Vimeo vimeoLink='https://player.vimeo.com/video/438353350?autoplay=1&loop=1&muted=1' />
 				</Col>
 			</LayoutSection>
