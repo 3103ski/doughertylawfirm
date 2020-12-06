@@ -37,10 +37,10 @@ class ContactForm extends Component {
 					<input type='email' name='email' />
 					<textarea name='message'></textarea>
 				</form>
-				<form method='post' data-netlify='true' name='contact-dougherty'>
+				<form method='post' data-netlify='true' name='contact'>
 					<div className='fields'>
 						<div className='field'>
-							<input type='hidden' name='form-name' value='contact-dougherty' />
+							<input type='hidden' name='form-name' value='contact' />
 						</div>
 						<div className='field'>
 							<label htmlFor='name'>Name</label>
