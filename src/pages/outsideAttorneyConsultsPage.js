@@ -8,7 +8,7 @@ function OutsideAttorneyConsultsPage(props) {
 	const imgDir = 'assets/images/pageAssets/outside-attorney-consults/';
 	return (
 		<>
-			<PageHeader>Outside AttorneyConsultsPage</PageHeader>
+			<PageHeader>Outside{window.innerWidth < 576 ? <br /> : ' '}Attorney Consults</PageHeader>
 			<RouteAnimation>
 				<LayoutSection>
 					<HeaderText>how we can help</HeaderText>

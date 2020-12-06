@@ -13,7 +13,7 @@ function CasesWeHandle(props) {
 	const slides = [{ imageURL: `${imgDir}s-3.jpg` }, { imageURL: `${imgDir}s-2.png` }, { imageURL: `${imgDir}s-1.jpg` }];
 	return (
 		<>
-			<PageHeader>Cases We Handle</PageHeader>
+			<PageHeader>Cases We{window.innerWidth < 576 ? <br /> : ' '}Handle</PageHeader>
 			<RouteAnimation>
 				<LayoutSection>
 					<Col className='col-10 mx-auto'>
