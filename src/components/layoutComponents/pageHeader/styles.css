@@ -1,7 +1,8 @@
 .title-container {
 	width: 100%;
 	/* background-image: url('/assets/images/siteWide/page-banner-bg.jpeg'); */
-	background-color: #5255bd;
+	background-color: var(--secondary-dark);
+	/* background-color: #5255bd; */
 	background-size: cover;
 	display: flex;
 	align-items: center;

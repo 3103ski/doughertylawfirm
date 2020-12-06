@@ -29,7 +29,9 @@ export default function ContactCard(props) {
 							<Paragraph>team@wetrycases.com</Paragraph>
 							<Paragraph>Mon - Fri: 9am - 5pm</Paragraph>
 							<Paragraph>
-								<a href={props.florida ? 'tel:+19545311821' : 'tel:+14807022277'}>{props.florida ? '954.531.1821' : '480.702.2277'}</a>
+								<a className='phone-link' href={props.florida ? 'tel:+19545311821' : 'tel:+14807022277'}>
+									{props.florida ? '954.531.1821' : '480.702.2277'}
+								</a>
 							</Paragraph>
 						</Col>
 					</Row>

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import { PageHeader, RouteAnimation, ContactCard, LayoutSection, ImgReel, CounterSection } from '../components';
+import { PageHeader, RouteAnimation, ContactCard, LayoutSection, ImgReel, CounterSection, FormSection } from '../components';
 //
 
 function ContactUsPage(props) {
@@ -14,8 +14,11 @@ function ContactUsPage(props) {
 					<ContactCard florida />
 					<ContactCard />
 				</LayoutSection>
+				<PageHeader />
+				<FormSection />
+				<PageHeader />
 				<ImgReel />
-				<CounterSection />
+				{/* <CounterSection /> */}
 			</RouteAnimation>
 		</>
 	);

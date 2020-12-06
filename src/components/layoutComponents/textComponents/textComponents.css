@@ -18,7 +18,7 @@ h1 {
 
 .bullet-item a,
 p a {
-	color: blue;
+	color: var(--secondary-dark);
 	overflow-wrap: anywhere;
 }
 

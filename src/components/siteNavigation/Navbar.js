@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import allLinks from '../../constants/navbar';
 import * as R from '../../constants/routes';
 
-import './navbar2.css';
+import './navbar.css';
 
 export default class Navbar extends Component {
 	constructor(props) {
@@ -195,14 +195,40 @@ export default class Navbar extends Component {
 					<RenderLink route={R.OUTSIDE_ATTORNEY_CONSULTS} activePrimary='resources' activeDrop='resources' activeSublink='outside-attorney-consults'>
 						outside attorney consult
 					</RenderLink>
-					<RenderLink route={R.ABOUT_US} activePrimary='resources' activeDrop='resources' activeSublink='about-us'>
+					<RenderLink route={R.ABOUT_US} activePrimary='resources' activeDrop='about' activeSublink='about-us'>
 						about us
 					</RenderLink>
+					{this.state.isMobile ? aboutLinks() : null}
 					<RenderLink route={R.VIDEOS} activePrimary='resources' activeDrop='resources' activeSublink='videos'>
 						videos
 					</RenderLink>
 					<RenderLink route={R.CONTACT_US} activePrimary='resources' activeDrop='resources' activeSublink='contact-us'>
 						contact us
+					</RenderLink>
+				</div>
+			);
+		};
+		const aboutLinks = () => {
+			return (
+				<div className={`dropmenu-about drop-menu ${this.state.mobileNavOpen ? 'open' : ''} ${this.state.activeDrop === 'about' ? 'activeDrop' : ''}`}>
+					{!this.state.isMobile ? (
+						<>
+							<a
+								onClick={() => this.setState({ ...this.state, activeDrop: this.state.activeDrop === 'about' ? 'resources' : '' })}
+								className='menu-link main-link'
+								style={{ fontSize: '.7rem', marginRight: '10px', paddingTop: '6px' }}>
+								<span className='fas fa-arrow-left' /> back
+							</a>
+						</>
+					) : null}
+					<RenderLink route={R.ABOUT_US} activePrimary='resources' activeDrop='about' activeSublink='about-us'>
+						general info
+					</RenderLink>
+					<RenderLink route={R.GIANCARLO_BIO} activePrimary='resources' activeDrop='about' activeSublink='giancarlo'>
+						giancarlo cellini
+					</RenderLink>
+					<RenderLink route={R.ADAM_BIO} activePrimary='resources' activeDrop='about' activeSublink='adam'>
+						adam dougherty
 					</RenderLink>
 				</div>
 			);
@@ -288,6 +314,7 @@ export default class Navbar extends Component {
 							{this.state.isMobile ? null : casesLinks()}
 							{this.state.isMobile ? null : resourcesLinks()}
 							{this.state.isMobile ? null : brainInjuryLinks()}
+							{this.state.isMobile ? null : aboutLinks()}
 						</div>
 					</div>
 				</div>
@@ -295,232 +322,3 @@ export default class Navbar extends Component {
 		);
 	}
 }
-
-// export default class SiteNav extends Component {
-// 	constructor(props) {
-// 		super(props);
-// 		this.state = {
-// 			allLinks: [...allLinks],
-// 			isLoaded: false,
-// 			width: window.innerWidth,
-// 			mobileCasesDrop: false,
-// 			mobileResourcesDrop: false,
-// 			activePrimaryLink: '',
-// 			activeSubLink: '',
-// 			activeSubMenu: '',
-// 			activeMobileMenu: '',
-// 		};
-// 	}
-
-// 	selectLink(link) {
-// 		if (link) {
-// 			const activeSublink = link.link.split('/')[1];
-// 			this.setState({
-// 				activePrimaryLink: link.activePrimaryLink,
-// 				activeSubLink: link.isSubLink ? activeSublink : '',
-// 				activeSubMenu: link.activeSubMenu ? link.activeSubMenu : '',
-// 			});
-// 		}
-// 		if (this.state.width < 992) {
-// 			this.toggleMobileNavLinks();
-// 		}
-// 	}
-
-// 	generateRouteInfoForNav = () => {
-// 		const currPage = document.location.pathname.split('/')[1];
-// 		let routeInfo = {
-// 			primary: '',
-// 			subLink: '',
-// 			subMenu: '',
-// 		};
-
-// 		if (currPage === '') {
-// 			routeInfo.primary = 'home';
-// 		} else if (currPage === 'cases-we-handle') {
-// 			routeInfo.primary = currPage;
-// 		} else if (resourceLinks.includes(currPage)) {
-// 			routeInfo.primary = 'resources';
-// 			routeInfo.subLink = currPage;
-// 		} else if (casesWeHandleLinks.includes(currPage)) {
-// 			routeInfo.primary = 'cases-we-handle';
-// 			routeInfo.subLink = currPage;
-// 		} else if (brainInjuryLinks.includes(currPage)) {
-// 			routeInfo = {
-// 				primary: 'cases-we-handle',
-// 				subLink: currPage,
-// 				subMenu: 'traumatic-brain-injury',
-// 			};
-// 		}
-// 		return routeInfo;
-// 	};
-
-// 	stickyNav() {
-// 		const navContainer = document.getElementById('main-nav');
-// 		if (window.pageYOffset >= 80) {
-// 			navContainer.classList.add('sticky');
-// 		} else {
-// 			navContainer.classList.remove('sticky');
-// 		}
-// 	}
-
-// 	setWidth = () => {
-// 		const width = window.innerWidth;
-// 		this.setState({
-// 			...this.state,
-// 			width,
-// 		});
-// 	};
-
-// 	toggleMobileNavLinks() {
-// 		const mobileNav = document.getElementById('nav-links');
-// 		if (!mobileNav.classList.contains('open-mobile-nav')) {
-// 			mobileNav.classList.add('open-mobile-nav');
-// 		} else {
-// 			mobileNav.classList.remove('open-mobile-nav');
-// 		}
-// 	}
-
-// 	toggleMobileClasses() {
-// 		const navContainer = document.getElementById('main-nav');
-// 		const logoContainer = document.getElementById('nav-logo');
-// 		const linksContainer = document.getElementById('nav-links');
-// 		if (this.state.width < 992) {
-// 			navContainer.classList.add('mobile-main-nav-container');
-// 			logoContainer.classList.add('mobile-nav-logo-container');
-// 			linksContainer.classList.add('mobile-nav-links-container');
-// 		} else {
-// 			navContainer.classList.remove('mobile-main-nav-container');
-// 			logoContainer.classList.remove('mobile-nav-logo-container');
-// 			linksContainer.classList.remove('mobile-nav-links-container');
-// 		}
-// 	}
-
-// 	toggleSubNav() {}
-
-// 	// **********************************************************
-// 	// **********************************************************
-// 	//          RENDER
-// 	// **********************************************************
-// 	// **********************************************************
-
-// 	render() {
-// 		// -----------------------
-// 		//      Event Listeners
-// 		// -----------------------
-// 		window.onscroll = () => {
-// 			this.stickyNav();
-// 		};
-// 		window.addEventListener('resize', () => {
-// 			if (window.innerWidth != this.state.width) {
-// 				this.setWidth();
-// 				console.log(this.state.width);
-// 			}
-// 			this.toggleMobileClasses();
-// 		});
-// 		window.addEventListener('load', () => {
-// 			this.toggleMobileClasses();
-// 			if (!this.state.isLoaded) {
-// 				const routeInfo = this.generateRouteInfoForNav();
-// 				this.setWidth();
-// 				this.setState({
-// 					...this.state,
-// 					activePrimaryLink: routeInfo.primary,
-// 					activeSubMenu: routeInfo.subMenu,
-// 					activeSubLink: routeInfo.subLink,
-// 					isLoaded: true,
-// 				});
-// 			}
-// 		});
-
-// 		// -----------------------
-// 		//      Nav Links
-// 		// -----------------------
-// 		let priamryLinks = this.state.allLinks.map((link) => {
-// 			if (link.link) {
-// 				if (link.dropLinks) {
-// 					return <SiteNav.RenderDropMenuLink selectLink={(link) => this.selectLink(link)} state={this.state} linkObject={link} />;
-// 				}
-// 				return (
-// 					<div className='non-drop-link'>
-// 						<SiteNav.RenderLink selectLink={(link) => this.selectLink(link)} state={this.state} linkObject={link} />
-// 					</div>
-// 				);
-// 			}
-// 			return null;
-// 		});
-
-// 		return (
-// 			<div style={{ position: 'relative' }}>
-// 				<div id='main-nav' className={`main-nav-container `}>
-// 					<div id='nav-logo' className={`nav-logo-container`}>
-// 						<NavLink to={R.HOME} onClick={() => this.setState({ activePrimaryLink: 'home', activeSubLink: '', activeSubMenu: '' })}>
-// 							<img className='nav-logo' src='/assets/images/logo.png' />
-// 						</NavLink>
-// 					</div>
-// 					<div className='mobile-nav-toggle'>
-// 						<i id='nav-toggle' className='fas fa-bars' onClick={() => this.toggleMobileNavLinks()}></i>
-// 					</div>
-// 					<div id='nav-links' className='nav-links-container'>
-// 						{priamryLinks}
-// 					</div>
-// 				</div>
-// 			</div>
-// 		);
-// 	}
-// }
-
-// SiteNav.RenderLink = function (props) {
-// 	const link = props.linkObject;
-// 	const linkStr = link.link.split('/')[1];
-// 	let isActiveSubLink = props.state.activeSubLink === linkStr ? true : false;
-// 	let isActiveSubMenu = props.state.activeSubMenu === linkStr ? true : false;
-
-// 	const clickLink = () => {
-// 		if (link.isPrimary && link.dropLinks) {
-// 		}
-// 		if (!link.isPrimary && link.dropLinks) {
-// 			return () => {};
-// 		}
-// 	};
-
-// 	return (
-// 		<NavLink
-// 			className={`
-//         ${!link.isSubLink ? 'menu-link' : 'menu-link sub-link'}
-//         ${link.isPrimary && link.activePrimaryLink === props.state.activePrimaryLink ? 'activePrimary' : ''}
-//         ${!link.isPrimary && isActiveSubLink ? 'activeSublink' : ''}
-//         ${!link.isPrimary && isActiveSubMenu ? 'activeSubMenu' : ''}
-//         `}
-// 			to={link.link}
-// 			onClick={() => props.selectLink(link)}>
-// 			{link.linkText}
-// 		</NavLink>
-// 	);
-// };
-
-// SiteNav.RenderDropMenuLink = (props) => {
-// 	const link = props.linkObject;
-// 	return (
-// 		<div className={`${!link.isSubMenu ? `drop-menu-container mobile-sub${link.link}` : 'sub-menu-container'}`}>
-// 			<SiteNav.RenderLink selectLink={(link) => props.selectLink(link)} state={props.state} linkObject={link} />
-// 			<div className={`${!link.isSubMenu ? 'drop-menu-content' : 'sub-menu-content'}`}>
-// 				{link.dropLinks.map((subLink) => {
-// 					if (subLink.dropLinks) {
-// 						return (
-// 							<SiteNav.RenderDropMenuLink
-// 								selectLink={(subLink) => props.selectLink(subLink)}
-// 								state={props.state}
-// 								linkObject={subLink}
-// 								isSubMenu
-// 								dropLinks={subLink.dropLinks}
-// 								text={subLink.linkText}
-// 								link={subLink.link}
-// 							/>
-// 						);
-// 					}
-// 					return <SiteNav.RenderLink selectLink={(subLink) => props.selectLink(subLink)} state={props.state} linkObject={subLink} isSubLink text={subLink.linkText} link={subLink.link} />;
-// 				})}
-// 			</div>
-// 		</div>
-// 	);
-// };

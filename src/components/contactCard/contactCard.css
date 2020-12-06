@@ -41,6 +41,10 @@
 	background-color: rgb(217 217 217 / 65%);
 }
 
+.phone-link {
+	color: #e20c0c;
+}
+
 iframe {
 	height: 350px;
 }
