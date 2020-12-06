@@ -3,12 +3,17 @@
 }
 .counter-header {
 	background-color: var(--primary-dark);
+	padding: 10px;
+}
+
+.counter-header p {
 	color: var(--primary-light);
 	text-transform: uppercase;
 	font-size: 0.95rem;
 	text-align: center;
 	font-weight: bold;
-	padding: 10px;
+	line-height: 1.15rem;
+	margin: 0;
 }
 
 .counter-body h1 {

@@ -307,7 +307,7 @@ export default class Navbar extends Component {
 									</a>
 									{this.state.isMobile ? resourcesLinks() : null}
 									<a href='tel:+18002310323' className='menu-link main-link'>
-										call now!
+										<i class='fas fa-phone'></i> (800)231-0323
 									</a>
 								</div>
 							</div>
