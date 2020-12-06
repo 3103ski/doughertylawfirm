@@ -10,7 +10,7 @@ import * as ROUTES from '../constants/routes';
 function TraumaticBrainInjuryPage(props) {
 	return (
 		<>
-			<PageHeader>traumatic brain injury</PageHeader>
+			<PageHeader>traumatic{window.innerWidth < 576 ? <br /> : ' '}brain injury</PageHeader>
 			<RouteAnimation>
 				<LayoutSection>
 					<HeaderImage image='/assets/images/pageAssets/traumatic-brain-injury/hdr.jpeg' alt='traumatic brain injury' />

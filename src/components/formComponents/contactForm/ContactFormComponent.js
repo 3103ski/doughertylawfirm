@@ -32,7 +32,12 @@ class ContactForm extends Component {
 	render() {
 		return (
 			<>
-				<Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)}>
+				<form name='contact' netlify netlify-honeypot='bot-field' hidden>
+					<input type='text' name='firstName' />
+					<input type='email' name='email' />
+					<textarea name='feedback'></textarea>
+				</form>
+				<Form style={{ width: '100%' }} model='contactForm' onSubmit={(values) => this.handleSubmit(values)} method='post' data-netlify='true' name='contact-dougherty'>
 					<Row className='form-group'>
 						<Col className='col-12 col-lg-6'>
 							<Label htmlFor='firstName' className='d-none'>
