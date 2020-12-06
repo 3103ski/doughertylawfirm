@@ -2,8 +2,8 @@ import React from 'react';
 import './formSection.css';
 import { Col } from 'reactstrap';
 import { LayoutSection, Paragraph, HeaderText } from '../../components';
-// import ContactForm from '../formComponents/contactForm/ContactFormComponent';
-import ContactForm from '../formComponents/contactTwo/contactForm';
+import ContactForm from '../formComponents/contactForm/ContactFormComponent';
+// import ContactForm from '../formComponents/contactTwo/contactForm';
 import { SubHeaderText } from '../layoutComponents/textComponents/TextComponents';
 
 export default function FormSection(props) {
