@@ -258,7 +258,8 @@
 		padding-left: 10px;
 	}
 
-	.dropmenu-brain {
+	.dropmenu-brain,
+	.dropmenu-about {
 		padding: 5px 0 15px 15px;
 		text-align: left;
 	}
