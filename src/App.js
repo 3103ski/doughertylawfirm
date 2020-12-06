@@ -26,6 +26,7 @@ import {
 	TraumaticBrainInjuryPage,
 	TruckingPage,
 	WrongfulDeathPage,
+	VideosPage,
 } from './pages';
 // Constants
 import * as ROUTES from './constants/routes';
@@ -99,6 +100,9 @@ function App() {
 				</Switch>
 				<Switch>
 					<Route exact path={ROUTES.CONTACT_US} render={() => <ContactUsPage />} />
+				</Switch>
+				<Switch>
+					<Route exact path={ROUTES.VIDEOS} render={() => <VideosPage />} />
 				</Switch>
 				<Footer />
 			</Router>

@@ -24,3 +24,4 @@ export { default as AboutUsPage } from './aboutUsPage';
 export { default as ContactUsPage } from './contactUsPage';
 export { default as AdamBioPage } from './adamBioPage';
 export { default as GcBioPage } from './gcBioPage';
+export { default as VideosPage } from './videos';
