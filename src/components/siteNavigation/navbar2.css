@@ -235,6 +235,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		overflow: scroll;
 	}
 
 	.menu,
@@ -335,4 +336,8 @@
 		animation-duration: 0.2s;
 		animation-fill-mode: forwards;
 	}
+
+	/* @media only screen and (max-height: 450px) and (max-width: 991px) {
+
+	} */
 }
