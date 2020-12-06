@@ -1,13 +1,24 @@
 .header-image {
 	border-radius: var(--img-rad);
 	width: 80%;
-	height: 370px;
+	height: 400px;
 	margin: 0 auto;
 	position: relative;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 991px) {
 	.header-image {
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header-image {
+		height: 350px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.header-image {
+		height: 250px;
 	}
 }

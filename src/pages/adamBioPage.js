@@ -88,11 +88,11 @@ function AdamBioPage(props) {
 						pre-suit offer. He is also a member of the Million Dollar Advocates Forum.
 					</Paragraph>
 				</Col>
-				<Col className='col-12 col-xl-2 my-5 d-flex flex-xl-column justify-content-around align-items-center'>
-					<Col className='col-3 col-xl-12'>
+				<Col className='col-12 col-xl-2 my-5 d-flex d-xl-block justify-content-around align-items-center'>
+					<Col className='col-3 col-xl-12 mb-xl-4 mt-xl-5'>
 						<img src={`${imgDir}/leaders.jpg`} alt="south florida's leaders in law" style={{ width: '100%' }} className='rounded' />
 					</Col>
-					<Col className='col-3 col-xl-12'>
+					<Col className='col-3 col-xl-12 mb-xl-4'>
 						<img src={`${imgDir}/coc.png`} alt='Cup of coffee book front' style={{ width: '100%' }} className='rounded' />
 					</Col>
 					<Col className='col-3 col-xl-12'>

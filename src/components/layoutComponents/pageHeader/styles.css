@@ -19,9 +19,9 @@
 
 @media only screen and (max-width: 1180px) {
 	.title-text {
-		padding-top: 75px;
+		padding-top: 60px;
 		font-size: 2rem;
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 	}
 	.title-container {
 		background-image: unset;

@@ -11,19 +11,20 @@ function AboutUsPage({ animation, children, ...restProps }) {
 			<PageHeader>About Us</PageHeader>
 			<RouteAnimation animation={animation ? animation : ''}>
 				<LayoutSection>
-					<Col className='mx-auto col-11 '>
-						<HeaderImage styles={{ backgroundPosition: 'top', height: '' }} image='/assets/images/pageAssets/about-us/AD-GC.jpeg' alt='Adam and Giancarlo' />
+					<Col className='mx-auto col-11 my-5'>
+						{/* <HeaderImage styles={{ backgroundPosition: 'top', height: '' }} image='/assets/images/pageAssets/about-us/AD-GC.jpeg' alt='Adam and Giancarlo' /> */}
+						<img src='/assets/images/pageAssets/about-us/AD-GC.jpeg' alt='' style={{ width: '100%' }} className='rounded' />
 					</Col>
 				</LayoutSection>
 				<LayoutSection className=''>
-					<Col className='col-12 col-md-6 order-0 mt-5'>
+					<Col className='col-12 col-md-6 order-0 mt-2'>
 						<SubHeaderText>Giancarlo R. Cellini, Esq</SubHeaderText>
 						<Paragraph>
 							Giancarlo Cellini is an Of Councel attorney with the DOUGHERTY LAW FIRM’S trial team. He started his legal career while still a teenager as an office assistant for a solo
 							practitioner.
 						</Paragraph>
 					</Col>
-					<Col className='col-12 col-md-6 order-2 order-md-1 mt-5'>
+					<Col className='col-12 col-md-6 order-2 order-md-1 mt-2'>
 						<SubHeaderText>Adam T. Dougherty, Esq.</SubHeaderText>
 						<Paragraph>
 							Adam Dougherty is the founding partner of DOUGHERTY LAW FIRM. He has been involved with the justice system since 1993, first in law enforcement and then as an attorney. Mr.
