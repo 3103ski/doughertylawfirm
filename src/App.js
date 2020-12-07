@@ -26,6 +26,7 @@ import {
 	TraumaticBrainInjuryPage,
 	TruckingPage,
 	WrongfulDeathPage,
+	FormSuccess,
 	VideosPage,
 } from './pages';
 // Constants
@@ -103,6 +104,9 @@ function App() {
 				</Switch>
 				<Switch>
 					<Route exact path={ROUTES.VIDEOS} render={() => <VideosPage />} />
+				</Switch>
+				<Switch>
+					<Route exact path={ROUTES.FORM_SUCCESS} render={() => <FormSuccess />} />
 				</Switch>
 				<Footer />
 			</Router>

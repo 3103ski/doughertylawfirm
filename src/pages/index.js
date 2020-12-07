@@ -1,6 +1,7 @@
 // Main Pages
 export { default as Home } from './home';
 export { default as CasesWeHandle } from './casesWeHandlePage';
+export { default as FormSuccess } from './formSuccess';
 
 // Cases We handle
 export { default as TruckingPage } from './truckingPage';
