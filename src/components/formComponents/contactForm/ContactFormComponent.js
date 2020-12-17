@@ -6,7 +6,6 @@ import { Control, Form, Errors } from 'react-redux-form';
 import { connect } from 'react-redux';
 import { actions } from 'react-redux-form';
 import { required, maxLength, minLength, isNumber, validEmail } from '../../../constants/validators';
-import * as R from '../../../constants/routes';
 
 class ContactForm extends Component {
 	constructor(props) {
@@ -33,7 +32,7 @@ class ContactForm extends Component {
 	render() {
 		return (
 			<>
-				<form style={{ width: '100%' }} model='contactForm' method='post' data-netlify='true' name='contact' action={R.FORM_SUCCESS}>
+				<Form style={{ width: '100%' }} model='contactForm' method='post' data-netlify='true' name='contact' action='/form-success'>
 					<input type='hidden' name='form-name' value='contact' />
 					<Row className='form-group'>
 						<Col className='col-12 col-lg-6'>
@@ -101,7 +100,7 @@ class ContactForm extends Component {
 							</Button>
 						</Col>
 					</Row>
-				</form>
+				</Form>
 			</>
 		);
 	}

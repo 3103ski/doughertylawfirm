@@ -3,7 +3,5 @@ export const ContactInitial = {
 	lastName: '',
 	phoneNUm: '',
 	email: '',
-	agree: false,
-	contactType: 'Phone',
 	feedback: '',
 };
